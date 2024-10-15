@@ -260,7 +260,7 @@ li {
 /*     Home     */
 /****************/
 .home {
-	background-image: url(../assets/images/home.jpg);
+	background-image: url(../assets/images/emare2.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -272,7 +272,7 @@ li {
 }
 
 .para-light {
-  	opacity: 0.7;
+  	opacity: 0.9;
 }
 
 
