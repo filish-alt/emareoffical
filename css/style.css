@@ -65,13 +65,20 @@ li {
 /* Section Background */
 .home,
 .about,
-.services,
-.plans,
 .work,
 .contact {
 	height: 110vh;
 	position: relative;
 }
+
+.services{
+	height: 120vh;
+}
+
+.plans{
+	height: 210vh;
+}
+
 
 .services,
 .work,
@@ -143,8 +150,8 @@ li {
 }
 
 .navbar .logo-image img {
-	width: 100px;
-	height: 45px;
+	width: 40x;
+	height: 40px;
 }
 
 .navbar .logo-text {
@@ -359,6 +366,7 @@ li {
 /********************/
 .services .card {
 	padding: 20px;
+	margin-bottom: 15px;
 	border-radius: 0;
 	border: 2px solid white;
 }

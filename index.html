@@ -42,6 +42,18 @@
    })();
 </script>
 <script src="./script.js"></script>
+
+<script>
+    function togglePrices(sectionid) {
+        var priceSection = document.getElementById(sectionid);
+        if (priceSection.style.display === "none" || priceSection.style.display === "") {
+            priceSection.style.display = "block"; // Show prices
+        } else {
+            priceSection.style.display = "none"; // Hide prices
+        }
+    }
+</script>
+
 <body>
     
     <!-- Navigation -->
@@ -49,10 +61,10 @@
         <div class="container">
 
             <!-- Image Logo -->
-             <a class="navbar-brand logo-image" href="index.html"><img src="./assets/images/logo 1.png" alt="alternative"></a>
+             <a class="navbar-brand logo-image" href="index.html"><img src="./assets/images/nav.png" alt="alternative"></a>
 
             <!-- Text Logo - Use this if you don't have a graphic logo -->
-            <a class="navbar-brand logo-text" href="index.html">Emare ICT Hub</a>
+            <a class="navbar-brand logo-text mt-1 ml-1" href="index.html">Emare ICT Hub</a>
 
             <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -222,7 +234,7 @@
         </div> <!-- end of container -->
     </section> <!-- end of services -->
 
-
+    <div class="row gy-5" data-aos="zoom-in">
     <!-- Plans -->
     <section class="plans d-flex align-items-center py-5" id="plans">
         <div class="container text-light" >
@@ -234,88 +246,259 @@
                 <div class="col-lg-4">
                     <div class="card bg-transparent px-4">
                         <h4 class="py-2">Graphics Design</h4>
-                        <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="py-3">Topics Cover</p>
                         <div class="block d-flex align-items-center">
                             <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Introduction to Design Principles</p>
                         </div>
                         <div class="block d-flex align-items-center">
                             <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Adobe Photoshop, Illustrator, InDesign</p>
                         </div>
                         <div class="block d-flex align-items-center">
                             <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Logo and Brand Identity Design</p>
                         </div>
-                        <h4 class="py-3">$24/Month</h4>
-                        <div class="my-3">
-                            <a class="btn" href="#your-link" >View Plans</a>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Layout and Typography</p>
                         </div>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Social Media Graphics</p>
+                        </div>
+
+                         <!-- Price Section - initially hidden -->
+                         <div class="price-toggle" style="display: none;" id="priceSection">
+                            <h5 class="py-3">
+                                <i class="far fa-money-bill-alt"></i>
+                                 Beginner 4000 Birr/Month</h5>
+                                 <p>        Duration 1 month (8 sessions, 2 hours each)</p>
+                            
+                            <h5 class="py-3">
+                                <i class="far fa-money-bill-alt"></i>
+                                Intermediate 5000 Birr/Month</h5>
+                                     <p>Duration 1 month (8 sessions, 2 hours each)</p>
+    
+                            <h5 class="py-3">
+                                <i class="far fa-money-bill-alt"></i>
+                                Advanced 6500 Birr/Month</h5>
+                            <p>Duration 1.5 months (10 sessions, 2 hours each)</p>
+                        </div>
+                    <!-- Button to toggle price visibility -->
+                    <div class="my-3">
+                        <a class="btn" href="javascript:void(0);" onclick="togglePrices('priceSection')">View Price</a>
+                    </div>
                     </div>  
                 </div>
 
                 <div class="col-lg-4">
                     <div class="card bg-transparent px-4">
-                        <h4 class="py-2">Website Development</h4>
-                        <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h4 class="py-2">Video Editing & Photography</h4>
+                        <p class="py-3">Topics Cover</p>
                         <div class="block d-flex align-items-center">
                             <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Photography Basics (Lighting, Framing, Camera Settings)</p>
                         </div>
                         <div class="block d-flex align-items-center">
                             <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Video Editing in Adobe Premiere Pro/Final Cut Pro</p>
                         </div>
                         <div class="block d-flex align-items-center">
                             <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Motion Graphics and Animation (After Effects)</p>
                         </div>
-                        <h4 class="py-3">$99/Month</h4>
-                        <div class="my-3">
-                            <a class="btn" href="#your-link" >View Plans</a>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Color Correction and Grading</p>
                         </div>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Editing for Social Media</p>
+                        </div>
+                        
+                          <!-- Price Section - initially hidden -->
+                          <div class="price-toggle" style="display: none;" id="priceSection2">
+                            <h5 class="py-3">
+                                <i class="far fa-money-bill-alt"></i>
+                                 Beginner 5000 Birr/Month</h5>
+                                  <p>Duration 1 month (8 sessions, 2 hours each))</p>
+                            
+                            <h5 class="py-3">
+                                <i class="far fa-money-bill-alt"></i>
+                                Intermediate 6000 Birr/Month</h5>
+                                     <p>Duration 1 month (8 sessions, 2 hours each)</p>
+    
+                            <h5 class="py-3">
+                                <i class="far fa-money-bill-alt"></i>
+                                Advanced 7500 Birr/Month</h5>
+                            <p>Duration 1.5 months (10 sessions, 2 hours each)</p>
+                        </div>
+                    <!-- Button to toggle price visibility -->
+                    <div class="my-3">
+                        <a class="btn" href="javascript:void(0);" onclick="togglePrices('priceSection2')">View Price</a>
+                    </div>
                     </div>  
                 </div>
 
                 <div class="col-lg-4">
                     <div class="card bg-transparent px-4" >
-                        <h4 class="py-2">Adobe Illustlator</h4>
-                        <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h4 class="py-2">Website Development</h4>
+                        <p class="py-3">Topic Covered</p>
                         <div class="block d-flex align-items-center">
                             <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>HTML, CSS, JavaScript (Front-End)</p>
                         </div>
                         <div class="block d-flex align-items-center">
                             <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>React, Angular (Front-End Frameworks)</p>
                         </div>
                         <div class="block d-flex align-items-center">
                             <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Node.js, Python (Back-End Development)</p>
                         </div>
-                        <h4 class="py-3">$199/Month</h4>
-                        <div class="my-3">
-                            <a class="btn" href="#your-link" >View Plans</a>                    
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Databases (SQL, NoSQL)</p>
                         </div>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>API Development and Integration</p>
+                        </div>
+                          <!-- Price Section - initially hidden -->
+                          <div class="price-toggle" style="display: none;" id="priceSection3">
+                            <h5 class="py-3">
+                                <i class="far fa-money-bill-alt"></i>
+                                 Beginner 7500 Birr/Month</h5>
+                                  <p>Duration 3 months (16 sessions, 2 hours each)</p>
+                            
+                            <h5 class="py-3">
+                                <i class="far fa-money-bill-alt"></i>
+                                Intermediate 9000 Birr/Month</h5>
+                                     <p>Duration 3 months (16 sessions, 2 hours each)</p>
+    
+                            <h5 class="py-3">
+                                <i class="far fa-money-bill-alt"></i>
+                                Advanced 12,000 Birr/Month</h5>
+                            <p>Duration 5 months (32 sessions, 2 hours each)</p>
+                        </div>
+                    <!-- Button to toggle price visibility -->
+
+                    <div class="my-3">
+                        <a class="btn" href="javascript:void(0);" onclick="togglePrices('priceSection3')">View Price</a>
+                    </div>
                     </div>  
                 </div>
             </div> <!-- end of row -->
+
+            <div class="row gy-15" data-aos="zoom-in">
+
+            <div class="row gy-4" data-aos="zoom-in">
+                <div class="col-lg-4">
+                    <div class="card bg-transparent px-4">
+                        <h4 class="py-2">Microsoft Office Training</h4>
+                        <p class="py-3">Topics Cover</p>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Word (Document Formatting, Styles)</p>
+                        </div>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Excel (Data Entry, Formulas, Charts)</p>
+                        </div>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>PowerPoint (Presentation Design)</p>
+                        </div>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Advanced Excel (Pivot Tables, Macros)</p>
+                           
+                        </div>
+                        
+                         <!-- Price Section - initially hidden -->
+                         <div class="price-toggle" style="display: none;" id="priceSection4">
+                            <h5 class="py-3">
+                                <i class="far fa-money-bill-alt"></i>
+                                 Beginner 3000 Birr/Month</h5>
+                                 <p>Duration 1 month (8 sessions, 2 hours each)</p>
+                            
+                            <h5 class="py-3">
+                                <i class="far fa-money-bill-alt"></i>
+                                Intermediate 4000 Birr/Month</h5>
+                                     <p>Duration 1 month (8 sessions, 2 hours each)</p>
+    
+                            <h5 class="py-3">
+                                <i class="far fa-money-bill-alt"></i>
+                                Advanced 5000 Birr/Month</h5>
+                            <p>Duration 1.5 months (10 sessions, 2 hours each)</p>
+                        </div>
+                    <!-- Button to toggle price visibility -->
+                    <div class="my-3">
+                        <a class="btn" href="javascript:void(0);" onclick="togglePrices('priceSection4')">View Price</a>
+                    </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card bg-transparent px-4">
+                        <h4 class="py-2">Statistical Package for the Social Sciences</h4>
+                        <p class="py-3">Topics Cover</p>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Introduction to SPSS Interface</p>
+                        </div>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Data Entry and Management</p>
+                        </div>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Descriptive Statistics</p>
+                        </div>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Data Visualization and Graphs</p>
+                        </div>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Inferential Statistics (T-tests, ANOVA, Regression Analysis)</p>
+                        </div>
+                        <div class="block d-flex align-items-center">
+                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                            <p>Advanced Statistical Techniques (Factor Analysis, Non-parametric Tests)</p>
+                        </div>
+                          <!-- Price Section - initially hidden -->
+                          <div class="price-toggle" style="display: none;" id="priceSection5">
+                            <h5 class="py-3">
+                                
+                                <i class="far fa-money-bill-alt"></i>
+                                 Beginner 4500 Birr/Month</h5>
+                                  <p>Duration 1 month (8 sessions, 2 hours each))</p>
+                            
+                            <h5 class="py-3">
+                                <i class="far fa-money-bill-alt"></i>
+                                Intermediate 6000 Birr/Month</h5>
+                                     <p>Duration 1 month (8 sessions, 2 hours each)</p>
+    
+                            <h5 class="py-3">
+                                <i class="far fa-money-bill-alt"></i>
+                                Advanced 7500 Birr/Month</h5>
+                            <p>Duration 1.5 months (10 sessions, 2 hours each)</p>
+                        </div>
+                    <!-- Button to toggle price visibility -->
+                    <div class="my-3">
+                        <a class="btn" href="javascript:void(0);" onclick="togglePrices('priceSection5')">View Price</a>
+                    </div>
+                    </div>  
+                </div>
+
+            </div> <!-- end of row -->
+
         </div> <!-- end of container -->
     </section> <!-- end of plans -->
 
-
+    <div class="row gy-15" data-aos="zoom-in">
     <!-- Work 
     <section class="work d-flex align-items-center py-5" >
         <div class="container-fluid text-light">
@@ -463,7 +646,7 @@
     </div> -->
 
 
-    <!-- Newsletter -->
+    <!--
     <section class="newsletter text-light py-5">
         <div class="container">
             <div class="row" >
@@ -477,9 +660,9 @@
                         <button class="btn-secondary text-light" type="button">Subscribe</button>
                     </div>
                 </div>
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </section> <!-- end of newsletter -->
+            </div>
+        </div>
+    </section> -->
 
 
     <!-- Contact -->
@@ -491,7 +674,7 @@
                         <div class="text-center text-lg-start py-4 pt-lg-0">
                             <p>CONTACT</p>
                             <h2 class="py-2">Send your query</h2>
-                            <p class="para-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos dicta mollitia totam explicabo obcaecati quia laudantium repudiandae.</p>
+                            <p class="para-light">Share us your Idea</p>
                         </div>
                         <div>
                             <div class="row" >
@@ -535,14 +718,14 @@
                     <div class="p-2"><i class="far fa-map fa-3x"></i></div>
                     <div class="ms-2">
                         <h6>ADDRESS</h6>
-                        <p>Teuku Umar ST. 1919</p>
+                        <p>Debrh Berhan</p>
                     </div>
                 </div>
                 <div class="col-lg-3 d-flex align-items-center" >
                     <div class="p-2"><i class="fas fa-mobile-alt fa-3x"></i></div>
                     <div class="ms-2">
                         <h6>CALL FOR QUERY</h6>
-                        <p>(800) 265  216 2020</p>
+                        <p>+251 926716804</p>
                     </div>
                 </div>
                 <div class="col-lg-3 d-flex align-items-center" >
@@ -570,9 +753,9 @@
             <div class="row" data-aos="fade-right">
                 <div class="col-lg-3 py-4 py-md-5">
                     <div class="d-flex align-items-center">
-                        <h4 class="">Mirko</h4>
+                        <h4 class="">Emare Ict Hub</h4>
                     </div>
-                    <p class="py-3 para-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus animi repudiandae explicabo esse maxime, impedit rem voluptatibus amet error quas.</p>
+                    <p class="py-3 para-light">A Center for Digital Innovation and Technology Development</p>
                     <div class="d-flex">
                         <div class="me-3">
                             <a href="#your-link">
@@ -614,7 +797,7 @@
                     </div>
                 </div> <!-- end of col -->
 
-                <div class="col-lg-3 py-4 py-md-5">
+              <!--  <div class="col-lg-3 py-4 py-md-5">
                     <div>
                         <h4 class="py-2">Useful Links</h4>
                         <div class="d-flex align-items-center py-2">
@@ -635,20 +818,9 @@
                             <a href="#your-link"><p class="ms-3">FAQ</p></a>
                         </div>
                     </div>
-                </div> <!-- end of col -->
+                </div>--> <!-- end of col -->
 
-                <div class="col-lg-3 py-4 py-md-5">
-                    <div class="d-flex align-items-center">
-                        <h4>Newsletter</h4>
-                    </div>
-                    <p class="py-3 para-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, ab.</p>
-                    <div class="d-flex align-items-center">
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control p-2" placeholder="Enter Email" aria-label="Recipient's email">
-                            <button class="btn-secondary text-light"><i class="fas fa-envelope fa-lg"></i></button>       
-                        </div>
-                    </div>
-                </div> <!-- end of col -->
+                 <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </section> <!-- end of footer -->
@@ -658,15 +830,9 @@
     <div class="bottom py-2 text-light" >
         <div class="container d-flex justify-content-between">
             <div>
-                <p>Copyright © Your name</p><br>
-                <p>Distributed by: <a href="https://themewagon.com/">Themewagon</a></p>
+                <p>Copyright © Filagot Shewafera</p><br>
             </div>
-            <div>
-                <i class="fab fa-cc-visa fa-lg p-1"></i>
-                <i class="fab fa-cc-mastercard fa-lg p-1"></i>
-                <i class="fab fa-cc-paypal fa-lg p-1"></i>
-                <i class="fab fa-cc-amazon-pay fa-lg p-1"></i>
-            </div>
+            
         </div> <!-- end of container -->
     </div> <!-- end of bottom -->
  
