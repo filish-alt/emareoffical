@@ -77,7 +77,7 @@ li {
 }
 
 .plans{
-	height: 258vh;
+	height: 270vh;
 	position: relative;
     margin-top: 0;
 }
@@ -107,8 +107,14 @@ li {
     margin-top: 10px; /* Add spacing between title and description */
 }
 .logo {
-    max-height: 50px; /* Adjust as needed */
-    margin-right: 10px; /* Spacing between logo and description */
+    max-height: 85px; /* Adjust as needed */
+    margin-right: 20px; 
+	border-radius: 15px; /* Adjust this for more or less curve */
+    transition: transform 0.3s ease; /* Spacing between logo and description */
+}
+
+.logo:hover {
+    transform: scale(1.05); /* Slightly enlarges logo on hover */
 }
 
 .services,
