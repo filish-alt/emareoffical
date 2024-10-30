@@ -77,10 +77,19 @@ li {
 }
 
 .plans{
-	height: 270vh;
+	height: 110;
 	position: relative;
     margin-top: 0;
+	padding-bottom: 50px; /* Padding when visible */
+    transition: padding 0.3s ease; 
 }
+
+.plans-hidden {
+    padding-bottom: 0; /* No padding when hidden */
+}
+
+
+
 
 .supporters {
     text-align: center;
