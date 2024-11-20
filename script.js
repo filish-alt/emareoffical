@@ -1,14 +1,43 @@
-function sendEmail(){
-    let param ={
-        name : document.getElementById("name").value,
-        email : document.getElementById("phone").value,
-        phonenumber : document.getElementById("email").value,
-        message : document.getElementById("message").value,
-    }
-    emailjs.send("service_gh00ihj","template_66y5c01",param).then(alert("Email Sent!!"))
-}
 
-let currentIndex = 0;
+
+     // Initialize EmailJS with public key
+
+    function sendEmail() {
+        let params = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            phonenumber: document.getElementById("phone").value,
+            message: document.getElementById("message").value,
+        };
+        emailjs.init("vTXLWu_VT5pqSqkRC");
+
+        if (!params.name || !params.phonenumber || !params.email || !params.message) {
+            alert("Please fill in all fields before submitting.");
+            return;
+        }
+    
+        emailjs.send("service_p90obsk", "template_fkzjw61", params)
+            .then(() => {
+                alert("Email Sent Successfully!");
+                clearForm(); // Clear form fields
+            })
+            .catch((error) => {
+                console.error("Error:", error);
+                alert("Failed to send email. Please try again.");
+            });
+    }
+
+    function clearForm() {
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("phone").value = "";
+        document.getElementById("message").value = "";
+    }
+   
+
+
+
+ currentIndex = 0;
 
 const logos = document.querySelectorAll('.logo-container');
 const totalLogos = logos.length;
