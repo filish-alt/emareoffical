@@ -6,12 +6,12 @@
         let params = {
             name: document.getElementById("name").value,
             email: document.getElementById("email").value,
-            phonenumber: document.getElementById("phone").value,
+            phone: document.getElementById("phone").value,
             message: document.getElementById("message").value,
         };
         emailjs.init("vTXLWu_VT5pqSqkRC");
 
-        if (!params.name || !params.phonenumber || !params.email || !params.message) {
+        if (!params.name || !params.phone || !params.email || !params.message) {
             alert("Please fill in all fields before submitting.");
             return;
         }
