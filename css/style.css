@@ -435,7 +435,54 @@ li {
 	border: 2px solid white;
 }
 
+.name {
+	font-size: 28px;
+	font-weight: bold;
+	
+	margin: 10px 0;
+}
+.skills {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+	margin: 20px 0;
+	padding: 0;
+	list-style-type: none;
+}
 
+.profile-image {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	margin: 20px 0;
+	object-fit: cover;
+}
+
+.skills li {
+	background-image: none;
+	background: transparent;
+	border-image-source: var(--gradient);
+	box-shadow: 1px 1px 0px 0px var(--secondary);
+	color: #ffffff;
+	padding: 10px 15px;
+	border-radius: 20px;
+	font-size: 14px;
+	font-weight: bold;
+	display: inline-block;
+}
+.links a {
+	text-decoration: none;
+	color: #fff;
+	background-color: #007BFF;
+	padding: 10px 20px;
+	border-radius: 5px;
+	margin: 10px;
+	display: inline-block;
+}
+.links a:hover {
+	background-color: #0056b3;
+}
 /************************/
 /*     Testimonials     */
 /************************/
@@ -456,8 +503,9 @@ li {
 .testimonial-card {
 	border: 10px solid;
 	border-image-slice: 1;
-	border-width: 3px;
+	border-width: 2px;
 	border-image-source: var(--gradient);
+	
 }
 
 .slider-1 .slider-container {
@@ -523,7 +571,7 @@ li {
 .slider-1 .avatar {
 	width: 70px;
 	height: 70px;
-	border-radius: 50%;
+	border-radius: 30%;
 }
 
 /* Dropdown Menu */
