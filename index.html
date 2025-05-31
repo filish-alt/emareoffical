@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -8,13 +9,14 @@
     <meta name="description" content="Your description">
     <meta name="author" content="Your name">
 
-	<meta property="og:site_name" content="" /> <!-- website name -->
-	<meta property="og:site" content="" /> <!-- website link -->
-	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+    <meta property="og:site_name" content="" /> <!-- website name -->
+    <meta property="og:site" content="" /> <!-- website link -->
+    <meta property="og:title" content="" /> <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+    <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
     <title>Emare - ICT Hub</title>
@@ -30,15 +32,14 @@
     <!-- Favicon -->
     <link rel="icon" href="./assets/images/logo 1.png">
 </head>
-<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
 <script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "AvNxPvK03XVmKGmP5",
-      });
-   })();
+    (function () {
+        emailjs.init({
+            publicKey: "AvNxPvK03XVmKGmP5",
+        });
+    })();
 </script>
 <script src="./script.js"></script>
 
@@ -46,7 +47,7 @@
     function togglePrices(sectionid) {
         const plansSection = document.getElementById("plans");
         var priceSection = document.getElementById(sectionid);
-        
+
         if (priceSection.style.display === "none" || priceSection.style.display === "") {
             priceSection.style.display = "block"; // Show prices
         } else {
@@ -58,22 +59,24 @@
 
 
 <body>
-    
+
     <!-- Navigation -->
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
         <div class="container">
 
             <!-- Image Logo -->
-             <a class="navbar-brand logo-image" href="index.html"><img src="./assets/images/nav.png" alt="alternative"></a>
+            <a class="navbar-brand logo-image" href="index.html"><img src="./assets/images/nav.png"
+                    alt="alternative"></a>
 
             <!-- Text Logo - Use this if you don't have a graphic logo -->
-            <a class="navbar-brand logo-text mt-1 ml-1" href="index.html">Emare ICT Hub</a>
+            <a class="navbar-brand logo-text mt-1 ml-1" href="index.html">EMARE ICT HUB</a>
 
-            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault" >
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav ms-auto navbar-nav-scroll">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#header">Home</a>
@@ -90,7 +93,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#plans">Training Packages</a>
                     </li>
-                  <!-- <li class="nav-item dropdown">
+                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false" href="#">Drop</a>
                         
                         <ul class="dropdown-menu" aria-labelledby="dropdown01">
@@ -100,22 +103,22 @@
                             <li><div class="dropdown-divider"></div></li>
                             <li><a class="dropdown-item" href="#header">Privacy Policy</a></li>
                         </ul>
-                    </li>  -->
+                    </li> <!--&&&&&&& -->
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
                 <span class="nav-item social-icons">
                     <span class="fa-stack">
-                        <a href="#your-link">
+                        <a href="https://web.facebook.com/profile.php?id=61575108773808">
                             <i class="fas fa-circle fa-stack-2x"></i>
                             <i class="fab fa-facebook-f fa-stack-1x"></i>
                         </a>
                     </span>
                     <span class="fa-stack">
-                        <a href="#your-link">
+                        <a href="https://www.linkedin.com/company/emareicthub">
                             <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-twitter fa-stack-1x"></i>
+                            <i class="fab fa-linkedin fa-stack-1x"></i>
                         </a>
                     </span>
                 </span>
@@ -127,13 +130,16 @@
 
     <!-- Home -->
     <section class="home py-5 d-flex align-items-center" id="header">
-        <div class="container text-light py-5"  data-aos="fade-right"> 
-            <h1 class="headline">Digital <span class="home_text">Innovation & </span> <br>System Development Centre</br></h1>
-            <p class="para para-light py-3">Emare ICT Hub empowers local youth and entrepreneurs with digital skills and supports our dedicated development team in creating innovative solutions, fostering innovation and economic growth in the community.</p>
-          
+        <div class="container text-light py-5" data-aos="fade-right">
+            <h1 class="headline">Digital <span class="home_text">Innovation & </span> <br>System Development Centre</br>
+            </h1>
+            <p class="para para-light py-3">Emare ICT Hub empowers local youth and entrepreneurs with digital skills and
+                supports our dedicated development team in creating innovative solutions, fostering innovation and
+                economic growth in the community.</p>
+
             <div class="d-flex align-items-center">
                 <p class="p-2"><i class="fas fa-wifi fa-lg"></i></p>
-                <p>With High Speed WIFI.</p>  
+                <p>With High Speed WIFI.</p>
             </div>
             <div class="my-3">
                 <a class="btn" href="#plans">View Training Package</a>
@@ -149,33 +155,42 @@
             <div class="row logo-slider">
                 <!-- Each logo and text block should be inside a column -->
                 <div class="col-md-4 text-center logo-container">
-                    <!-- <a href="https://ethiopia2050.com/" target="_blank" rel="noopener noreferrer"> -->
+                    <!--<a href="https://ethiopia2050.com/" target="_blank" rel="noopener noreferrer">-->
                         <img src="./assets/images/image.png" alt="Ethiopia 2050 Logo" class="logo mb-2 ">
-                    
+                    <!--</a>-->
                     <h4 class="m-0">ETHIOPIA2050</h4>
                 </div>
                 <!-- Add more columns for additional logos -->
             </div>
         </div>
     </section>
-    
-    
+
+
 
     <!-- About -->
     <section class="about d-flex align-items-center text-light py-5" id="about">
-        <div class="container" >
+        <div class="container">
             <div class="row d-flex align-items-center">
                 <div class="col-lg-7" data-aos="fade-right">
                     <p>ABOUT US</p>
                     <h1>Digital Innovation and<br>System Development Center</h1>
-                    <p class="py-2 para-light">The Emare ICT Hub Center is designed to become a leading platform for digital skills development, technology entrepreneurship, and innovation in Debre Birehan City. This center offers a comprehensive ecosystem for tech growth, providing accessible digital tools, training, mentorship, and collaboration opportunities to local tech professionals, startups, and businesses. Crucially, Emare ICT Hub also features its own high-skilled development team, focused on creating and delivering cutting-edge systems and solutions. This internal capacity allows us to drive innovation from within and support the wider community. With the growing importance of technology in driving economic development, the Emare ICT Hub will be a vital player in fostering a tech-savvy community, empowering young innovators, and creating job opportunities through digital literacy.</p>
+                    <p class="py-2 para-light" style="text-align: justify;">Emare ICT Hub is designed to become a leading platform for
+                        digital skills development, technology entrepreneurship, and innovation in Debre Birehan City.
+                        This center offers a comprehensive ecosystem for tech growth, providing accessible digital
+                        tools, training, mentorship, and collaboration opportunities to local tech professionals,
+                        startups, and businesses. Crucially, Emare ICT Hub also features its own high-skilled
+                        development team, focused on creating and delivering cutting-edge systems and solutions. This
+                        internal capacity allows us to drive innovation from within and support the wider community.
+                        With the growing importance of technology in driving economic development, the Emare ICT Hub
+                        will be a vital player in fostering a tech-savvy community, empowering young innovators, and
+                        creating job opportunities through digital literacy.</p>
 
-                 <!--  <div class="my-3">
+                    <!--  <div class="my-3">
                         <a class="btn" href="#your-link">Learn More</a>
-                    </div> --> 
+                    </div> -->
                 </div>
-                <div class="col-lg-5 text-center py-4 py-sm-0" data-aos="fade-down"> 
-                    <img class="img-fluid" src="./assets/images/logo w3.png" alt="about" >
+                <div class="col-lg-5 text-center py-4 py-sm-0" data-aos="fade-down">
+                    <img class="img-fluid" src="./assets/images/logo w3.png" alt="about">
                 </div>
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -185,468 +200,487 @@
     <!-- Services -->
     <section class="services d-flex  py-5" id="services">
         <div class="container text-light">
-            <div class="text-center" >
-                <p>OUR SERVICES</p> 
+            <div class="text-center">
+                <p>OUR SERVICES</p>
                 <h2 class="py-2">Explore unlimited possibilities</h2>
             </div>
-            <div class="row gy-4 py-2" data-aos="zoom-in">
+            <div class="row gy-4 py-6" data-aos="zoom-in">
                 <div class="col-lg-4">
                     <div class="card bg-transparent min-height=300px">
-                         <i class="fas fa-laptop-code"></i>
-                        <h4 class="py-2">Mobile & Web Development </h4>
-                        <p class="para-light">We develop high-quality mobile apps and websites tailored to client requirements, leveraging our team's expertise in various programming languages and leading frameworks.</p>
+                        <i class="fas fa-laptop-code"></i>
+                        <h4 class="py-1">Mobile & Web Development </h4>
+                        <p class="para-light">We develop high-quality mobile apps and websites tailored to client
+                            requirements.</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="card bg-transparent">
                         <i class="fas fa-chalkboard-teacher "></i>
-                        <h4 class="py-2">Training Programs</h4>
-                        <p class="para-light">Regular courses in software development, web design, graphic design, digital marketing, and more    <br><br><br> </p>
-                  
-                    </div>                    
+                        <h4 class="py-1">Training Programs</h4>
+                        <p class="para-light">Regular courses in software development, web design, graphic design,
+                            digital marketing, and more <br> </p>
+
+                    </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="card bg-transparent">
                         <i class="fas fa-lightbulb"></i>
 
                         <h4 class="py-2">Business Incubation</h4>
-                        <p class="para-light">Support for startups and entrepreneurs through mentorship and access to funding opportunities    <br><br><br></p>
-                    </div>                    
+                        <p class="para-light">Support for startups and entrepreneurs through mentorship and access to
+                            funding opportunities <br></p>
+                    </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 py-8" >
                     <div class="card bg-transparent">
                         <i class="fas fa-server"></i>
 
                         <h4 class="py-2">Networking Events</h4>
-                        <p class="para-light">Opportunities for collaboration and networking among tech professionals and local businesses    <br><br><br></p>
-                    </div>                    
+                        <p class="para-light">Opportunities for collaboration and networking among tech professionals
+                            and local businesses <br></p>
+                    </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="card bg-transparent">
                         <i class="fas fa-user-friends"></i>
 
                         <h4 class="py-2">Community Outreach: </h4>
-                        <p class="para-light">Programs targeting schools and communities to promote ICT literacy    <br><br><br> </p>
-                    </div>                    
+                        <p class="para-light">Programs targeting schools and communities to promote ICT literacy
+                            <br><br> </p>
+                    </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="card bg-transparent">
                         <i class="fas fa-laptop"></i>
 
                         <h4 class="py-2">Online Trainings: </h4>
-                        <p class="para-light">Opportunities for those who want to train online and earn a certificate.    <br><br><br>  </p>
-                    </div>                    
+                        <p class="para-light">Opportunities for those who want to train online and earn a certificate.
+                            <br><br> </p>
+                    </div>
                 </div>
                 <div class="row gy-4 py-2" data-aos="zoom-in">
                     <div class="col-lg-4">
                         <div class="card bg-transparent">
-                             <i class="fas fa-light fa-users"></i>
-                            <h4 class="py-2">Co-working Spaces</h4>
-                            <p class="para-light">A collaborative workspace equipped with computers, high-speed internet, and essential software    <br><br><br> </p>
-                        </div>
-                    </div>
+                            <i class="fas fa-light fa-users"></i>
+                            <h4 class="py-1">Co-working Spaces</h4>
+                            <p class="para-light">A collaborative workspace equipped with computers, high-speed internet, and essential software.</p>
+                        <br></div>
                     </div>
                 </div>
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </section> <!-- end of services -->
-
-    <div class="slider-1 testimonial text-light d-flex align-items-center" id="developer">
+                    </div>
+                <div class="col-lg-6">
+                </div> <!-- end of row -->
+                 </div> <!-- end of container --> 
+        </section> <!-- end of services -->
+   
+     <div class="slider-1 testimonial text-light d-flex align-items-center" id="developer">
+           
         <div class="container">
             <div class="row">
                 <div class="text-center w-lg-75 m-auto pb-4">
-                    <p>EMARE DEVELOPERS</p>
-                    <h2 class="py-2">Let Introduce Our Developer</h2>
+                    <br><br><p></p><br><br><br><br><br><p>EMARE DEVELOPERS</p>
+                    <h2 class="py-2">Let's Introduce Our Developer </h2>
                 </div>
-            </div>    
+            </div>
 
             <div class="row p-2" data-aos="zoom-in">
                 <div class="col-lg-4">
-        
-                              
-                                
-                                    <div class="testimonial-card p-4">
-                                       
-                                    
-                                        <div class="d-flex pt-4">
-                                            <div>
-                                                <img class="avatar" src="./assets/images/fevpp.jpg" alt="testimonial">
-                                            </div>
-                                            <div class="ms-3 pt-2">
-                                                <p>Feven Behata</p>
-                                                <p>Full Stack Developer</p>
-                                                <h4>Skills</h4>
-                                                <ul class="skills">
-                                                        <li>Angular</li>
-                                                         <li>C#</li>
-                                                         <li>.Net</li>
-                                                         <li>Html-CSS-JS</li>
-                                                         <li>PHP</li>
-                                                         <li>Postgres</li>
-                                                         <li>Bootstrap</li>
-                                                         <li>MySQL</li>
-                                                         <li>React</li>
-                                                         <li>Node.Js</li>
-                                                         <li>Github</li>
-                                                        
-                                                     </ul>
-                                                     </div></div>
-                                                     <div class="price-toggle" style="display: none; " id="detail1">
-                                                        <h5 class="py-1"><i class="fas fa-briefcase"></i></h5>
-                                                        <p><strong>June 2023 - Feb 2024</strong><br>
-                                                            <strong>Software Developer</strong> - Ethiopian Commodity Exchange<br>
-                                                            Developed web apps with Angular and .NET. Optimized SQL queries for data management. Used GitHub for version control and documented features for future use.
-                                                        </p>
-                                                        <br>
-                                                        <p><strong>Apr 2024 - Present</strong><br>
-                                                            <strong>Application Developer</strong> - Lion International Bank<br>
-                                                            Built full-stack apps with Angular, .NET, and SQL Server. Integrated APIs, used Docker and Kubernetes for deployment, and collaborated on GitHub for code reviews.
-                                                        </p>
-                                                    </div>
-                                                    <div class="my-3">
-                                                        <a class="btn" href="javascript:void(0);" onclick="togglePrices('detail1')">Detail</a>
-                                                    </div>
-                                                    
-                                
-                                            </div>
-                                        </div>
-                                 
-                                
-        
-                                <div class="col-lg-4">
-                               
-                                    <div class="testimonial-card p-4">
-                                        
-                                        <div class="d-flex pt-4">
-                                            <div>
-                                                <img class="avatar" src="./assets/images/sol.jpg" alt="testimonial">
-                                            </div>
-                                            <div class="ms-3 pt-2">
-                                                <p>Solomon Legesse</p>
-                                                <p>Full Stack Developer</p>
-                                                <h4>Skills</h4>
-                                                <ul class="skills">
-                                                         <li>Node.js</li>
-                                                         <li>React</li>
-                                                         <li>PHP-Laravel</li>
-                                                         <li>Python-Flusk</li>
-                                                         <li>C</li>
-                                                         <li>Springboot</li>
-                                                         <li>Angular</li>
-                                                         <li>Bootstrap</li>
-                                                         <li>Html-CSS-JS</li>
-                                                         <li>Github</li>
-                                                        </div></div>
-                                                        <div class="price-toggle" style="display: none; " id="detail2">
-                                                           <h5 class="py-1"><i class="fas fa-briefcase"></i></h5>
-                                                           <p><strong>Feb 2022 - Jan 2022</strong><br>
-                                                               <strong>ALX Software Engineering Program</strong> <br>
-                                                               Completed a 12-month intensive program specializing in Backend Development with Python and Django. Built multiple projects and gained hands-on experience with various technologies, including version control using Git and GitHub.
-                                                           </p>
 
-                                                           <br>
-                                                           <p><strong>Mar 2024 - Aug 2024</strong><br>
-                                                               <strong>MERN Stack Training at Yeneta IT</strong> <br>
-                                                               Participated in a hands-on MERN Stack training program, where I worked on real-world projects to solidify my expertise in MongoDB, Express.js, React, and Node.js.
-                                                           </p>
-                                                           <br>
-                                                           <p><strong>Sep 2024 - Present</strong><br>
-                                                               <strong>Freelance Web Development</strong> <br>
-                                                               Worked as a freelance web developer, designing and building websites for diverse clients. Delivered tailored solutions using modern tools and frameworks while ensuring user-focused designs and functionality.
-                                                           </p>
-                                                       </div>
-                                                       <div class="my-3">
-                                                           <a class="btn" href="javascript:void(0);" onclick="togglePrices('detail2')">Detail</a>
-                                                       </div>
-                                                       
-                                   
-                                               </div>
-                                           </div>
-                                     
-                                   
-                                       <div class="col-lg-4">
-                                        
-                                            <div class="testimonial-card p-4">
-                                                
-                                                <div class="d-flex pt-4">
-                                                    <div>
-                                                        <img class="avatar" src="./assets/images/nati.jpg" alt="testimonial">
-                                                    </div>
-                                                    <div class="ms-3 pt-2">
-        
-                                                        <p>Natnael Zerihun</p>
-                                                         <p>Full Stack Developer | IT Professional</p>
-                                                         <h4>Skills</h4>
-                                                           <ul class="skills">
-                                                              <li>Node.js</li>
-                                                                    <li>React</li>
-                                                                    <li>PHP</li>
-                                                                    <li>Flutter</li>
-                                                                    <li>WordPress SEO</li>
-                                                                    <li>MySQL</li>
-                                                                    <li>MongoDB</li>
-                                                                    <li>HTML/CSS</li>
-                                                                    <li>Cybersecurity</li>
-                                                                    <li>Github</li>
-                                                                </ul>
-                                                            </div></div>
-                                                            <div class="price-toggle" style="display: none; " id="detail5">
-                                                               <h5 class="py-1"><i class="fas fa-briefcase"></i></h5>
-                                                               <p><strong>Dec 2022 - Present</strong><br>
-                                                                   <strong>IT Director</strong> - Allure Communication
-                                                                   <br>
-                                                                   Led IT strategies for multiple organizations, including Letena Ethiopia and Hedpac, optimizing software and hardware infrastructure.Pioneered the development of applications like "Enat" and "Mistir," advancing health education and tracking.  
-        
-                                                               </p>
-                                                               <br>
-                                                               <p><strong>Sep 2024 - Present</strong><br>
-                                                                   <strong>Full Stack Developer</strong> - Primeco Technologies PLC<br>
-                                                                   Developed EthioEinstein, an engaging online gaming platform. 
-                                                               </p>
-                                                               <br>
-                                                               <p><strong>Feb 2024 - Present</strong><br>
-                                                                   <strong>Full Stack Developer</strong> -Prime Technologies PLC<br>
-                                                                   Built platforms like BetNet.et (real estate) and Skill.et (freelancing marketplace) to connect users with tailored services.  
-                                                                </p>
-        
-                                                                <br>
-                                                                <p><strong>Aug 2023 - Present</strong><br>
-                                                                    <strong>Full Stack Development Lecturer </strong> -Gobeze Training Center <br>
-                                                                    Designed and delivered comprehensive course materials for Full Stack Development, fostering student success.  
-        
-                                                                 </p>
-                                                                 
-                                                                 <br>
-                                                                 <p><strong>Mar 2021 - May 2022</strong><br>
-                                                                    <strong>Mobile Application Developer </strong> -Engida Travel and Technology  <br>
-                                                                    Enhanced user experiences through innovative app features and collaborative code reviews.  
-        
-                                                                 </p>
+
+
+                    <div class="testimonial-card p-4">
+
+
+                        <div class="d-flex pt-4">
+                            <div>
+                                <img class="avatar" src="./assets/images/fevpp.jpg" alt="testimonial">
+                            </div>
+                            <div class="ms-3 pt-2">
+                                <p>Feven Behata</p>
+                                <p>Full Stack Developer</p>
+                                <h4>Skills</h4>
+                                <ul class="skills">
+                                    <li>Angular</li>
+                                    <li>C#</li>
+                                    <li>.Net</li>
+                                    <li>Html-CSS-JS</li>
+                                    <li>PHP</li>
+                                    <li>Postgres</li>
+                                    <li>Bootstrap</li>
+                                    <li>MySQL</li>
+                                    <li>React</li>
+                                    <li>Node.Js</li>
+                                    <li>Github</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="price-toggle" style="display: none; " id="detail1">
+                            <h5 class="py-1"><i class="fas fa-briefcase"></i></h5>
+                            <p><strong>June 2023 - Feb 2024</strong><br>
+                                <strong>Software Developer</strong> - Ethiopian Commodity Exchange<br>
+                                Developed web apps with Angular and .NET. Optimized SQL queries for data management.
+                                Used GitHub for version control and documented features for future use.
+                            </p>
+                            <br>
+                            <p><strong>Apr 2024 - Present</strong><br>
+                                <strong>Application Developer</strong> - Lion International Bank<br>
+                                Built full-stack apps with Angular, .NET, and SQL Server. Integrated APIs, used Docker
+                                and Kubernetes for deployment, and collaborated on GitHub for code reviews.
+                            </p>
+                        </div>
+                        <div class="my-3">
+                            <a class="btn" href="javascript:void(0);" onclick="togglePrices('detail1')">Detail</a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-4">
+
+                    <div class="testimonial-card p-4">
+
+                        <div class="d-flex pt-4">
+                            <div>
+                                <img class="avatar" src="./assets/images/sol.jpg" alt="testimonial">
+                            </div>
+                            <div class="ms-3 pt-2">
+                                <p>Solomon Legesse</p>
+                                <p>Full Stack Developer</p>
+                                <h4>Skills</h4>
+                                <ul class="skills">
+                                    <li>Node.js</li>
+                                    <li>React</li>
+                                    <li>PHP-Laravel</li>
+                                    <li>Python-Flusk</li>
+                                    <li>C</li>
+                                    <li>Springboot</li>
+                                    <li>Angular</li>
+                                    <li>Bootstrap</li>
+                                    <li>Html-CSS-JS</li>
+                                    <li>Github</li>
+                            </div>
+                        </div>
+                        <div class="price-toggle" style="display: none; " id="detail2">
+                            <h5 class="py-1"><i class="fas fa-briefcase"></i></h5>
+                            <p><strong>Feb 2022 - Jan 2022</strong><br>
+                                <strong>ALX Software Engineering Program</strong> <br>
+                                Completed a 12-month intensive program specializing in Backend Development with Python
+                                and Django. Built multiple projects and gained hands-on experience with various
+                                technologies, including version control using Git and GitHub.
+                            </p>
+
+                            <br>
+                            <p><strong>Mar 2024 - Aug 2024</strong><br>
+                                <strong>MERN Stack Training at Yeneta IT</strong> <br>
+                                Participated in a hands-on MERN Stack training program, where I worked on real-world
+                                projects to solidify my expertise in MongoDB, Express.js, React, and Node.js.
+                            </p>
+                            <br>
+                            <p><strong>Sep 2024 - Present</strong><br>
+                                <strong>Freelance Web Development</strong> <br>
+                                Worked as a freelance web developer, designing and building websites for diverse
+                                clients. Delivered tailored solutions using modern tools and frameworks while ensuring
+                                user-focused designs and functionality.
+                            </p>
+                        </div>
+                        <div class="my-3">
+                            <a class="btn" href="javascript:void(0);" onclick="togglePrices('detail2')">Detail</a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4">
+
+                    <div class="testimonial-card p-4">
+
+                        <div class="d-flex pt-4">
+                            <div>
+                                <img class="avatar" src="./assets/images/nati.jpg" alt="testimonial">
+                            </div>
+                            <div class="ms-3 pt-2">
+
+                                <p>Natnael Zerihun</p>
+                                <p>Full Stack Developer | IT Professional</p>
+                                <h4>Skills</h4>
+                                <ul class="skills">
+                                    <li>Node.js</li>
+                                    <li>React</li>
+                                    <li>PHP</li>
+                                    <li>Flutter</li>
+                                    <li>WordPress SEO</li>
+                                    <li>MySQL</li>
+                                    <li>MongoDB</li>
+                                    <li>HTML/CSS</li>
+                                    <li>Cybersecurity</li>
+                                    <li>Github</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="price-toggle" style="display: none; " id="detail5">
+                            <h5 class="py-1"><i class="fas fa-briefcase"></i></h5>
+                            <p><strong>Dec 2022 - Present</strong><br>
+                                <strong>IT Director</strong> - Allure Communication
+                                <br>
+                                Led IT strategies for multiple organizations, including Letena Ethiopia and Hedpac,
+                                optimizing software and hardware infrastructure.Pioneered the development of
+                                applications like "Enat" and "Mistir," advancing health education and tracking.
+
+                            </p>
+                            <br>
+                            <p><strong>Sep 2024 - Present</strong><br>
+                                <strong>Full Stack Developer</strong> - Primeco Technologies PLC<br>
+                                Developed EthioEinstein, an engaging online gaming platform.
+                            </p>
+                            <br>
+                            <p><strong>Feb 2024 - Present</strong><br>
+                                <strong>Full Stack Developer</strong> -Prime Technologies PLC<br>
+                                Built platforms like BetNet.et (real estate) and Skill.et (freelancing marketplace) to
+                                connect users with tailored services.
+                            </p>
+
+                            <br>
+                            <p><strong>Aug 2023 - Present</strong><br>
+                                <strong>Full Stack Development Lecturer </strong> -Gobeze Training Center <br>
+                                Designed and delivered comprehensive course materials for Full Stack Development,
+                                fostering student success.
+
+                            </p>
+
+                            <br>
+                            <p><strong>Mar 2021 - May 2022</strong><br>
+                                <strong>Mobile Application Developer </strong> -Engida Travel and Technology <br>
+                                Enhanced user experiences through innovative app features and collaborative code
+                                reviews.
+
+                            </p>
+                        </div>
+                        <div class="my-3">
+                            <a class="btn" href="javascript:void(0);" onclick="togglePrices('detail5')">Detail</a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <br><br>
+
+            <div class="row p-2" data-aos="zoom-in">
+                <div class="col-lg-4">
+
+                    <div class="testimonial-card p-4">
+
+                        <div class="d-flex pt-4">
+                            <div>
+                                <img class="avatar" src="./assets/images/Filagot.jpg" alt="">
+                            </div>
+                            <div class="ms-3 pt-2">
+                                <p>Filagot Shewafera</p>
+                                <p>Full Stack Developer</p>
+                                <h4>Skills</h4>
+                                <ul class="skills">
+                                    <li>Go - Gin</li>
+                                    <li>Angular</li>
+                                    <li>.Net</li>
+                                    <li>Node.js</li>
+                                    <li>React</li>
+                                    <li>MySQL,MongoDB,Postgres</li>
+                                    <li>MongoDB</li>
+                                    <li>HTML5/ CSS</li>
+                                    <li>Java - Springboot</li>
+                                    <li>Github</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="price-toggle" style="display: none; " id="detail4">
+                            <h5 class="py-1"><i class="fas fa-briefcase"></i></h5>
+                            <p><strong>Dec 2022 - Jan 2023</strong><br>
+                                <strong>Application Developer Trainee</strong> - DAN Energy
+                                <br>
+                                Pursued training in application development, gaining expertise in building modern
+                                software solutions. Earned a MERN Stack certification from Udemy, showcasing proficiency
+                                in MongoDB, Express.js, React, and Node.js. Collaborated with trainers to foster a
+                                knowledge-sharing environment and enhance collective learning.
+                            </p>
+                            <br>
+                            <p><strong>Jun 2023 - Feb 2024</strong><br>
+                                <strong>Full Stack Developer</strong> - Ethiopian Commodity Exchange (ECX)<br>
+                                Developed and maintained web applications using .NET and Angular. Worked closely with
+                                cross-functional teams, including designers and product managers, to deliver
+                                high-quality solutions. Ensured responsive designs, cross-browser compatibility, and
+                                participated in code reviews to improve code quality.
+                            </p>
+                            <br>
+                            <p><strong>Feb 2024 - Present</strong><br>
+                                <strong>Full Stack Developer</strong> - Two Capital<br>
+                                Developed and maintained backend systems using Go, including testing with Godog.
+                                Utilized containerization tools like Docker to streamline application deployment and
+                                scalability. Worked closely with designers, product managers, and other developers to
+                                deliver robust applications. Focused on responsive design, cross-browser compatibility,
+                                and actively contributed to code reviews to enhance development standards. Additionally,
+                                worked on a payment gateway project to enable secure and efficient financial
+                                transactions.
+                        </div>
+                        <div class="my-3">
+                            <a class="btn" href="javascript:void(0);" onclick="togglePrices('detail4')">Detail</a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4">
+
+                    <div class="testimonial-card p-4">
+
+                        <div class="d-flex pt-4">
+                            <div>
+                                <img class="avatar" src="./assets/images/samuel.jpg" alt="testimonial">
+                            </div>
+                            <div class="ms-3 pt-2">
+                                <p>Samuel B</p>
+                                <p>Website and Mobile App Developer</p>
+                                <h4>Skills</h4>
+                                <ul class="skills">
+                                    <li>Node.js</li>
+                                    <li>React</li>
+                                    <li>Angular</li>
+                                    <li>Flutter</li>
+                                    <li>.Net</li>
+                                    <li>Springboot</li>
+                                    <li>PHP</li>
+                                    <li>Nest.JS</li>
+                                    <li>Python</li>
+                                    <li>Kotlin</li>
+                                    <li>MySQL,MongoDB,Postgres</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="price-toggle" style="display: none; " id="detail6">
+                            <h5 class="py-1"><i class="fas fa-briefcase"></i></h5>
+                            <p><strong>AUG 2024 - NOV 2024</strong><br>
+                                <strong>Full-Stack Developer</strong> - Taptosign.com
+                                <br>
+                                As a Full-Stack Developer Taptosign, Develop new features that fit with the permanent
+                                system. Fix errors that appears. Integration of backend with the front end and also
+                                making for the wesite. and working on the Golang backend.
+                            </p>
+                            <br>
+                            <p><strong>JUL 2023 - JUN 2024</strong><br>
+                                <strong>Software Developer and System Admin</strong> - Unity University<br>
+                                As a Software Developer and System Administrator at Unity University in Ethiopia, my
+                                tasks include: Develop Order management system. maintaining WordPress website, managing
+                                and maintaining computer systems, networks, and servers, providing technical support to
+                                users, collaborating with IT professionals and departments, staying updated on emerging
+                                technologies and trends.
+                            </p>
+                            <br>
+                            <p><strong>Feb 2024 - Present</strong><br>
+                                <strong>Software Developer</strong> - <br>
+                                As a software developer and control specialist at the Center for Adolescent Girls Health
+                                for free service, I designed and implemented user-friendly applications and WordPress
+                                website, ensuring seamless functionality. I excelled in quality control, conducting
+                                thorough testing and debugging.
+
+                            </p>
+                            <br>
+                            <p><strong>OCT 2022 - MAR 2023</strong><br>
+                                <strong>E-Commerce Web Application</strong> - <br>
+                                Developed an e-commerce application which have robust features. Developed with React and
+                                .Net.
+                            </p>
+                            <br>
+                            <p><strong>AUG 2023 – SEPT 2023</strong><br>
+                                <strong>Guideline For Midwives Flutter Application</strong> -<br>
+                                Developed an e-commerce application which have robust features. Developed with React and
+                                .Net.
+                            </p>
+
+                            <br>
+                            <p><strong>May 2023 – OCT 2023</strong><br>
+                                <strong>Health Management Web Application </strong> -<br>
+                                Developed a health management software for three hospitals on a freelance basis.
+                                Developed with Angular and .Net.
+                            </p>
+                        </div>
+                        <div class="my-3">
+                            <a class="btn" href="javascript:void(0);" onclick="togglePrices('detail6')">Detail</a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+
+                    <div class="testimonial-card p-4">
+
+                        <div class="d-flex pt-4">
+                            <div>
+                                <img class="avatar" src="./assets/images/zekariyas.png" alt="">
+                            </div>
+                            <div class="ms-3 pt-2">
+                                <p>Robel Alemayehu</p>
+                                <p>Full Stack Developer</p>
+                                <h4>Skills</h4>
+                                <ul class="skills">
+                                    <li>Android-Kotlin</li>
+                                    <li>Python-Diango</li>
+                                    <li>JavaScript</li>
+                                    <li>PHP</li>
+                                    <li>HTML5/ CSS</li>
+                                    <li>Cloud (GCP, AWS)</li>
+                                    <li>SQL (PostgreSQL, MySQL)</li>
+                                    <li>LUA DESKTOP APP</li>
+                                    <li>Github</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="price-toggle" style="display: none; " id="detail3">
+                            <h5 class="py-1"><i class="fas fa-briefcase"></i></h5>
+
+                        </div>
+                        <div class="my-3">
+                            <a class="btn" href="javascript:void(0);" onclick="togglePrices('detail3')">Detail</a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
         </div>
-                                                           <div class="my-3">
-                                                               <a class="btn" href="javascript:void(0);" onclick="togglePrices('detail5')">Detail</a>
-                                                           </div>
-                                                           
-                                       
-                                                   </div>
-                                               </div>
-                                         
-        </div>
-        <br><br>
-                          
-             <div class="row p-2" data-aos="zoom-in">
-                                <div class="col-lg-4">
-                                
-                                    <div class="testimonial-card p-4">
-                                       
-                                        <div class="d-flex pt-4">
-                                            <div>
-                                                <img class="avatar" src="./assets/images/Filagot.jpg" alt="">
-                                            </div>
-                                            <div class="ms-3 pt-2">
-                                                <p>Filagot Shewafera</p>
-                                                <p>Full Stack Developer</p>
-                                                <h4>Skills</h4>
-                                                <ul class="skills">
-                                                         <li>Go - Gin</li>
-                                                         <li>Angular</li>
-                                                         <li>.Net</li>
-                                                         <li>Node.js</li>
-                                                         <li>React</li>
-                                                         <li>MySQL,MongoDB,Postgres</li>
-                                                         <li>MongoDB</li>
-                                                         <li>HTML5/ CSS</li>
-                                                         <li>Java - Springboot</li>
-                                                         <li>Github</li>
-                                                     </ul>
-                                                    </div></div>
-                                                    
-                                                    <div class="price-toggle" style="display: none; " id="detail4">
-                                                       <h5 class="py-1"><i class="fas fa-briefcase"></i></h5>
-                                                       <p><strong>Dec 2022 - Jan 2023</strong><br>
-                                                           <strong>Application Developer Trainee</strong> - DAN Energy
-                                                           <br>
-                                                           Pursued training in application development, gaining expertise in building modern software solutions. Earned a MERN Stack certification from Udemy, showcasing proficiency in MongoDB, Express.js, React, and Node.js. Collaborated with trainers to foster a knowledge-sharing environment and enhance collective learning.
-                                                       </p>
-                                                       <br>
-                                                       <p><strong>Jun 2023 - Feb 2024</strong><br>
-                                                           <strong>Full Stack Developer</strong> - Ethiopian Commodity Exchange (ECX)<br>
-                                                           Developed and maintained web applications using .NET and Angular. Worked closely with cross-functional teams, including designers and product managers, to deliver high-quality solutions. Ensured responsive designs, cross-browser compatibility, and participated in code reviews to improve code quality.
-                                                       </p>
-                                                       <br>
-                                                       <p><strong>Feb 2024 - Present</strong><br>
-                                                           <strong>Full Stack Developer</strong> - Two Capital<br>
-                                                           Developed and maintained backend systems using Go, including testing with Godog. Utilized containerization tools like Docker to streamline application deployment and scalability. Worked closely with designers, product managers, and other developers to deliver robust applications. Focused on responsive design, cross-browser compatibility, and actively contributed to code reviews to enhance development standards. Additionally, worked on a payment gateway project to enable secure and efficient financial transactions.
-                                                   </div>
-                                                   <div class="my-3">
-                                                       <a class="btn" href="javascript:void(0);" onclick="togglePrices('detail4')">Detail</a>
-                                                   </div>
-                                                   
-                               
-                                           </div>
-                                       </div>
-                                  
-                          
-                            <div class="col-lg-4">
-                               
-                                    <div class="testimonial-card p-4">
-                                        
-                                        <div class="d-flex pt-4">
-                                            <div>
-                                                <img class="avatar" src="./assets/images/samuel.jpg" alt="testimonial">
-                                            </div>
-                                            <div class="ms-3 pt-2">
-                                                <p>Samuel B</p>
-                                                <p>Website and Mobile App Developer</p>
-                                                <h4>Skills</h4>
-                                                <ul class="skills">
-                                                         <li>Node.js</li>
-                                                         <li>React</li>
-                                                         <li>Angular</li>
-                                                         <li>Flutter</li>
-                                                         <li>.Net</li>
-                                                         <li>Springboot</li>
-                                                         <li>PHP</li>
-                                                         <li>Nest.JS</li>
-                                                         <li>Python</li>
-                                                         <li>Kotlin</li>
-                                                         <li>MySQL,MongoDB,Postgres</li>
-                                                     </ul>
-                                                    </div></div>
-                                                    
-                                                    <div class="price-toggle" style="display: none; " id="detail6">
-                                                       <h5 class="py-1"><i class="fas fa-briefcase"></i></h5>
-                                                       <p><strong>AUG 2024 - NOV 2024</strong><br>
-                                                           <strong>Full-Stack Developer</strong> - Taptosign.com
-                                                           <br>
-                                                           As a Full-Stack Developer Taptosign, Develop new features that fit with the permanent system. Fix errors that appears. Integration of backend with the front end and also making for the wesite. and working on the Golang backend.
-                                                       </p>
-                                                       <br>
-                                                       <p><strong>JUL 2023 - JUN 2024</strong><br>
-                                                           <strong>Software Developer and System Admin</strong> - Unity University<br>
-                                                           As a Software Developer and System Administrator at Unity University in Ethiopia, my tasks include: Develop Order management system. maintaining WordPress website, managing and maintaining computer systems, networks, and servers, providing technical support to users, collaborating with IT professionals and departments, staying updated on emerging technologies and trends.
-                                                       </p>
-                                                       <br>
-                                                       <p><strong>Feb 2024 - Present</strong><br>
-                                                           <strong>Software Developer</strong> - <br>
-                                                           As a software developer and control specialist at the Center for Adolescent Girls Health for free service, I designed and implemented user-friendly applications and WordPress website, ensuring seamless functionality. I excelled in quality control, conducting thorough testing and debugging.
-                                                   
-                                                   </p>
-                                                   <br>
-                                                   <p><strong>OCT 2022 - MAR 2023</strong><br>
-                                                    <strong>E-Commerce Web Application</strong> - <br>
-                                                    Developed an e-commerce application which have robust features. Developed with React and .Net.
-                                                </p>
-                                                <br>
-                                                <p><strong>AUG 2023 – SEPT 2023</strong><br>
-                                                    <strong>Guideline For Midwives Flutter Application</strong> -<br>
-                                                    Developed an e-commerce application which have robust features. Developed with React and .Net.
-                                                </p>
 
-                                                <br>
-                                                <p><strong>May 2023 – OCT 2023</strong><br>
-                                                    <strong>Health Management Web Application </strong> -<br>
-                                                    Developed a health management software for three hospitals on a freelance basis. Developed with Angular and .Net.
-                                                </p>
-                                                </div>
-                                                   <div class="my-3">
-                                                       <a class="btn" href="javascript:void(0);" onclick="togglePrices('detail6')">Detail</a>
-                                                   </div>
-                                                   
-                               
-                                           </div>
-                                       </div>
-                                   
-                                   <div class="col-lg-4">
-                                    
-                                        <div class="testimonial-card p-4">
-                                          
-                                            <div class="d-flex pt-4">
-                                                <div>
-                                                    <img class="avatar" src="./assets/images/zekariyas.png" alt="">
-                                                </div>
-                                                <div class="ms-3 pt-2">
-                                                    <p>Robel Alemayehu</p>
-                                                    <p>Full Stack Developer</p>
-                                                    <h4>Skills</h4>
-                                                    <ul class="skills">
-                                                            <li>Android-Kotlin</li>
-                                                             <li>Python-Diango</li>
-                                                             <li>JavaScript</li>
-                                                             <li>PHP</li>
-                                                             <li>HTML5/ CSS</li>
-                                                             <li>Cloud (GCP, AWS)</li>
-                                                             <li>SQL (PostgreSQL, MySQL)</li>
-                                                             <li>LUA DESKTOP APP</li>
-                                                             <li>Github</li>
-                                                         </ul>
-                                                        </div></div>
-                                                        <div class="price-toggle" style="display: none; " id="detail3">
-                                                           <h5 class="py-1"><i class="fas fa-briefcase"></i></h5>
-                                                           <p><strong>2018 - present</strong><br>
-                                                            <strong>IT technician and Teacher</strong> - Sheno Secondary school
-                                                            <br>
-                                                            
-                                                        </p>
-                                                        <br>
 
-                                                        <p><strong>2019 - 2022</strong><br>
-                                                            <strong>Web and database administrato</strong> -Ethiopian childrens fund
-                                                            <br>
-                                                            
-                                                        </p>
-                                                        <br>
+    </div>
+    </div>
+    </div>
+    </div>
 
-                                                        <p><strong>2019 - 2021</strong><br>
-                                                            <strong>Full stack developer</strong> -Anhui telecomunication Engineering
-                                                            <br>
-                                                            
-                                                        </p>
-                                                        <br>
-                                                        <p><strong>2023 - present</strong><br>
-                                                            <strong>Backend software developer</strong> -Terasoft
-                                                            <br>
-                                                            
-                                                        </p>
-                                                        <br>
-                                                        <p><strong>2024 - present</strong><br>
-                                                            <strong>Website and mobile app developer</strong> -jamrockethinc
-                                                            <br>
-                                                            
-                                                        </p>
-                                                        <br> 
-                                                       </div>
-                                                       <div class="my-3">
-                                                           <a class="btn" href="javascript:void(0);" onclick="togglePrices('detail3')">Detail</a>
-                                                       </div>
-                                                       
-                                   
-                                               </div>
-                                           </div>
-                                       
-                                   
-                         
-                            
-        
-                        </div> 
-                    </div> 
-                  
-
-                </div> 
-            </div> 
-        </div> 
-    </div> 
-    
     <!-- Plans -->
     <section class="plans d-flex py-5" id="plans">
-        <div class="container text-light" >
+        <div class="container text-light">
             <div class="text-center">
                 <p>Training Packages</p>
                 <h2 class="py-2">Explore unlimited possibilities</h2>
             </div>
             <div class="row gy-4" data-aos="zoom-in">
                 <div class="col-lg-4">
-                    <div class="card bg-transparent px-4">  
+                    <div class="card bg-transparent px-4">
                         <h4 class="py-2">Graphics Design</h4>
                         <p class="py-3">Topics Cover</p>
                         <div class="block d-flex align-items-center">
@@ -670,34 +704,38 @@
                             <p>Social Media Graphics</p>
                         </div>
 
-                         <!-- Price Section - initially hidden -->
-                         <div class="price-toggle" style="display: none;" id="priceSection">
+                        <!-- Price Section - initially hidden -->
+                        <div class="price-toggle" style="display: none;" id="priceSection">
                             <h5 class="py-3">
                                 <i class="far fa-money-bill-alt"></i>
-                                 Beginner 3000 Birr/Month</h5>
-                                 <p>        Duration 1 month (8 sessions, 2 hours each)</p>
-                            
+                                Beginner 3999 Birr
+                            </h5>
+                            <p> Duration 1 month (8 sessions, 2 hours each)</p>
+
                             <h5 class="py-3">
                                 <i class="far fa-money-bill-alt"></i>
-                                Intermediate 4000 Birr/Month</h5>
-                                     <p>Duration 1.5 month (12 sessions, 2 hours each)</p>
-    
+                                Intermediate 4999 Birr
+                            </h5>
+                            <p>Duration 1.5 month (12 sessions, 2 hours each)</p>
+
                             <h5 class="py-3">
                                 <i class="far fa-money-bill-alt"></i>
-                                Advanced 5000 Birr/Month</h5>
+                                Advanced 6999 Birr
+                            </h5>
                             <p>Duration 2 months (16 sessions, 2 hours each)</p>
                         </div>
-                    <!-- Button to toggle price visibility -->
-                    <div class="my-3">
-                        <a class="btn" href="javascript:void(0);" onclick="togglePrices('priceSection')">View Price</a>
+                        <!-- Button to toggle price visibility -->
+                        <div class="my-3">
+                            <a class="btn" href="javascript:void(0);" onclick="togglePrices('priceSection')">View
+                                Price</a>
+                        </div>
                     </div>
-                    </div>  
                 </div>
 
-               
+
 
                 <div class="col-lg-4">
-                    <div class="card bg-transparent px-4" >
+                    <div class="card bg-transparent px-4">
                         <h4 class="py-2">Frontend Web Development</h4>
                         <p class="py-3">Topic Covered</p>
                         <div class="block d-flex align-items-center">
@@ -720,24 +758,26 @@
                             <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
                             <p>Version Control Using Github</p>
                         </div>
-                          <!-- Price Section - initially hidden -->
-                          <div class="price-toggle" style="display: none;" id="priceSection3">
-    
+                        <!-- Price Section - initially hidden -->
+                        <div class="price-toggle" style="display: none;" id="priceSection3">
+
                             <h5 class="py-3">
                                 <i class="far fa-money-bill-alt"></i>
-                                Advanced 12,000 Birr/Month</h5>
+                                Advanced 12,000 Birr
+                            </h5>
                             <p>Duration 5 months (32 sessions, 2 hours each)</p>
                         </div>
-                    <!-- Button to toggle price visibility -->
+                        <!-- Button to toggle price visibility -->
 
-                    <div class="my-3">
-                        <a class="btn" href="javascript:void(0);" onclick="togglePrices('priceSection3')">View Price</a>
+                        <div class="my-3">
+                            <a class="btn" href="javascript:void(0);" onclick="togglePrices('priceSection3')">View
+                                Price</a>
+                        </div>
                     </div>
-                    </div>  
                 </div>
 
                 <div class="col-lg-4">
-                    <div class="card bg-transparent px-4" >
+                    <div class="card bg-transparent px-4">
                         <h4 class="py-2">Backend Web Development</h4>
                         <p class="py-3">Topic Covered</p>
                         <div class="block d-flex align-items-center">
@@ -760,448 +800,545 @@
                             <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
                             <p>Deployment</p>
                         </div>
-                          <!-- Price Section - initially hidden -->
-                          <div class="price-toggle" style="display: none;" id="priceSection12">
-    
+                        <!-- Price Section - initially hidden -->
+                        <div class="price-toggle" style="display: none;" id="priceSection12">
+
                             <h5 class="py-3">
                                 <i class="far fa-money-bill-alt"></i>
-                                Advanced 15,000 Birr/Month</h5>
+                                Advanced 15,000 Birr
+                            </h5>
                             <p>Duration 5 months (32 sessions, 2 hours each)</p>
                         </div>
                         <div class="my-3">
-                            <a class="btn" href="javascript:void(0);" onclick="togglePrices('priceSection12')">View Price</a>
+                            <a class="btn" href="javascript:void(0);" onclick="togglePrices('priceSection12')">View
+                                Price</a>
                         </div>
-                        </div>
-            </div> <!-- end of row -->
-
-            <div class="row gy-15" data-aos="zoom-in">
-
-            <div class="row gy-4" data-aos="zoom-in">
-                <div class="col-lg-4">
-                    <div class="card bg-transparent px-4 " style="min-height: 470px;">
-                        <h4 class="py-2">Security camera (CCTV) installation Training Package</h4>
-                        <p class="py-3">Topics Cover</p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Basic Security Camera Installation</p>
-                        
-                            
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Configuring Surveillance Systems</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Troubleshooting and Maintenance</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Advanced Installation Techniques for Large Premises</p>
-                        </div>
-                          <!-- Price Section - initially hidden -->
-                          <div class="price-toggle" style="display: none;" id="priceSection8">
-                            <h5 class="py-3">
-                                
-                                <i class="far fa-money-bill-alt"></i>
-                                 Beginner 3000 Birr/Month</h5>
-                                  <p>Duration 1 month (8 sessions, 2 hours each))</p>
-                            
-                            <h5 class="py-3">
-                                <i class="far fa-money-bill-alt"></i>
-                                Intermediate 4000 Birr/Month</h5>
-                                     <p>Duration 1.5 month (12 sessions, 2 hours each)</p>
-    
-                            <h5 class="py-3">
-                                <i class="far fa-money-bill-alt"></i>
-                                Advanced 5000 Birr/Month</h5>
-                            <p>Duration 2.5 months (16 sessions, 2 hours each)</p>
-                        </div>
-                    <!-- Button to toggle price visibility -->
-                    <div class="my-3">
-                        <a class="btn" href="javascript:void(0);" onclick="togglePrices('priceSection8')">View Price</a>
                     </div>
-                    </div>  
-                </div>
+                </div> <!-- end of row -->
 
-                
-                <div class="col-lg-4">
-                    <div class="card bg-transparent px-4" style="min-height: 470px;">
-                        <h4 class="py-2">Basic Computer Training Package</h4>
-                        <p class="py-3">Topics Cover</p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Introduction to Computers</p>
+                <div class="row gy-15" data-aos="zoom-in">
+
+                    <div class="row gy-4" data-aos="zoom-in">
+                        <div class="col-lg-4">
+                            <div class="card bg-transparent px-4 style=" min-height: 470px;">
+                                <h4 class="py-2">Security/Webcam Installation Training Package</h4>
+                                <p class="py-3">Topics Cover</p>
+                                <div class="block d-flex align-items-center">
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p>Basic Security Camera Installation</p>
+
+
+                                </div>
+                                <div class="block d-flex align-items-center">
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p>Configuring Surveillance Systems</p>
+                                </div>
+                                <div class="block d-flex align-items-center">
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p>Troubleshooting and Maintenance</p>
+                                </div>
+                                <div class="block d-flex align-items-center">
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p>Advanced Installation Techniques for Large Premises</p>
+                                </div>
+                                <!-- Price Section - initially hidden -->
+                                <div class="price-toggle" style="display: none;" id="priceSection8">
+                                    <h5 class="py-3">
+
+                                        <i class="far fa-money-bill-alt"></i>
+                                        Beginner 3999 Birr
+                                    </h5>
+                                    <p>Duration 1 month (8 sessions, 2 hours each))</p>
+
+                                    <h5 class="py-3">
+                                        <i class="far fa-money-bill-alt"></i>
+                                        Intermediate 4999 Birr
+                                    </h5>
+                                    <p>Duration 1.5 month (12 sessions, 2 hours each)</p>
+
+                                    <h5 class="py-3">
+                                        <i class="far fa-money-bill-alt"></i>
+                                        Advanced 5999 Birr
+                                    </h5>
+                                    <p>Duration 2.5 months (16 sessions, 2 hours each)</p>
+                                </div>
+                                <!-- Button to toggle price visibility -->
+                                <div class="my-3">
+                                    <a class="btn" href="javascript:void(0);"
+                                        onclick="togglePrices('priceSection8')">View Price</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>File Management and Internet Browsing</p>
+
+
+                        <div class="col-lg-4">
+                            <div class="card bg-transparent px-4" style="min-height: 470px;">
+                                <h4 class="py-2">Basic Computer Training Package</h4>
+                                <p class="py-3">Topics Cover</p>
+                                <div class="block d-flex align-items-center">
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p>Introduction to Computers</p>
+                                </div>
+                                <div class="block d-flex align-items-center">
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p>File Management and Internet Browsing</p>
+                                </div>
+                                <div class="block d-flex align-items-center">
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p>Microsoft Word, Excel, and PowerPoint</p>
+                                </div>
+                                <div class="block d-flex align-items-center">
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p>Basic Troubleshooting</p>
+
+
+                                </div>
+
+                                <!-- Price Section - initially hidden -->
+                                <div class="price-toggle" style="display: none;" id="priceSection10">
+                                    <h5 class="py-3">
+                                        <i class="far fa-money-bill-alt"></i>
+                                        Beginner 1999 Birr
+                                    </h5>
+                                    <p>Duration 1 month (8 sessions, 2 hours each)</p>
+
+                                    <h5 class="py-3">
+                                        <i class="far fa-money-bill-alt"></i>
+                                        Intermediate 2999 Birr
+                                    </h5>
+                                    <p>Duration 1 month (8 sessions, 2 hours each)</p>
+
+                                    <h5 class="py-3">
+                                        <i class="far fa-money-bill-alt"></i>
+                                        Advanced 3999 Birr
+                                    </h5>
+                                    <p>Duration 1.5 months (10 sessions, 2 hours each)</p>
+
+                                    <p></p>
+                                </div>
+
+                                <!-- Button to toggle price visibility -->
+                                <div class="my-3">
+                                    <a class="btn" href="javascript:void(0);"
+                                        onclick="togglePrices('priceSection10')">View Price</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Microsoft Word, Excel, and PowerPoint</p>
+
+                        <div class="col-lg-4">
+                            <div class="card bg-transparent px-4" style="min-height: 470px;">
+                                <h4 class="py-2">Computer Maintenance Training Package</h4>
+                                <p class="py-3">Topics Cover</p>
+                                <div class="block d-flex align-items-center">
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p>Hardware Basics (PC Assembly, Repair)</p>
+                                </div>
+                                <div class="block d-flex align-items-center">
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p>Software Installation and Troubleshooting</p>
+                                </div>
+                                <div class="block d-flex align-items-center">
+
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p> Virus Removal and Data Recovery</p>
+                                </div>
+                                <div class="block d-flex align-items-center">
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p>Advanced Troubleshooting and System Optimization</p>
+                                </div>
+                                <!-- Price Section - initially hidden -->
+                                <div class="price-toggle" style="display: none;" id="priceSection6">
+                                    <h5 class="py-3">
+
+                                        <i class="far fa-money-bill-alt"></i>
+                                        Beginner 5999 Birr
+                                    </h5>
+                                    <p>Duration 1 month (8 sessions, 2 hours each))</p>
+
+                                    <h5 class="py-3">
+                                        <i class="far fa-money-bill-alt"></i>
+                                        Intermediate 7999 Birr
+                                    </h5>
+                                    <p>Duration 1 month (8 sessions, 2 hours each)</p>
+
+                                    <h5 class="py-3">
+                                        <i class="far fa-money-bill-alt"></i>
+                                        Advanced 9999 Birr
+                                    </h5>
+                                    <p>Duration 1.5 months (10 sessions, 2 hours each)</p>
+                                </div>
+                                <!-- Button to toggle price visibility -->
+                                <div class="my-3">
+                                    <a class="btn" href="javascript:void(0);"
+                                        onclick="togglePrices('priceSection6')">View Price</a>
+                                    <br>
+                                </div>
+                            </div>
                         </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Basic Troubleshooting</p>
-                            
-                           
+
+
+                    </div> <!-- end of row -->
+
+
+                    <div class="row gy-4" data-aos="zoom-in">
+                        <div class="col-lg-4">
+                            <div class="card bg-transparent px-4" style="min-height: 450px;">
+                                <h4 class="py-2">Networking Training Package</h4>
+                                <p class="py-3">Topics Cover</p>
+                                <div class="block d-flex align-items-center">
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p>Network Setup (LAN, Wi-Fi)</p>
+                                </div>
+                                <div class="block d-flex align-items-center">
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p>Router and Modem Configuration</p>
+                                </div>
+                                <div class="block d-flex align-items-center">
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p>Network Security Basics</p>
+                                </div>
+                                <div class="block d-flex align-items-center">
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p>Advanced Network Troubleshooting</p>
+
+                                </div>
+
+                                <!-- Price Section - initially hidden -->
+                                <div class="price-toggle" style="display: none;" id="priceSection7">
+                                    <h5 class="py-3">
+                                        <i class="far fa-money-bill-alt"></i>
+                                        Beginner 4999 Birr
+                                    </h5>
+                                    <p>Duration 1 month (8 sessions, 2 hours each)</p>
+
+                                    <h5 class="py-3">
+                                        <i class="far fa-money-bill-alt"></i>
+                                        Intermediate 5499 Birr
+                                    </h5>
+                                    <p>Duration 1.5 month (12 sessions, 2 hours each)</p>
+
+                                    <h5 class="py-3">
+                                        <i class="far fa-money-bill-alt"></i>
+                                        Advanced 7000 Birr
+                                    </h5>
+                                    <p>Duration 2.5 months (16 sessions, 2 hours each)</p>
+
+                                    <p></p>
+                                </div>
+
+                                <!-- Button to toggle price visibility -->
+                                <div class="my-3">
+                                    <a class="btn" href="javascript:void(0);"
+                                        onclick="togglePrices('priceSection7')">View Price</a>
+                                </div>
+                            </div>
                         </div>
-                        
-                         <!-- Price Section - initially hidden -->
-                         <div class="price-toggle" style="display: none;" id="priceSection10">
-                            <h5 class="py-3">
-                                <i class="far fa-money-bill-alt"></i>
-                                 Beginner 2000 Birr/Month</h5>
-                                 <p>Duration 1 month (8 sessions, 2 hours each)</p>
-                            
-                            <h5 class="py-3">
-                                <i class="far fa-money-bill-alt"></i>
-                                Intermediate 3000 Birr/Month</h5>
-                                     <p>Duration 1 month (8 sessions, 2 hours each)</p>
-    
-                            <h5 class="py-3">
-                                <i class="far fa-money-bill-alt"></i>
-                                Advanced 4000 Birr/Month</h5>
-                            <p>Duration 1.5 months (10 sessions, 2 hours each)</p>
-                            
-                            <p></p>
+
+                        <div class="col-lg-4">
+                            <div class="card bg-transparent px-4" style="min-height: 450px;">
+                                <h4 class="py-2">Video Editing Training</h4>
+                                <p class="py-3">Topics Cover</p>
+                                <div class="block d-flex align-items-center">
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p>Tools (Premiere Pro, Filimora, CapCut)</p>
+                                </div>
+                                <div class="block d-flex align-items-center">
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p>Editing for Social Media</p>
+                                </div>
+                                <div class="block d-flex align-items-center">
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p>Color Correction and Grading</p>
+                                </div>
+                                <div class="block d-flex align-items-center">
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p>Motion Graphics and Animation</p>
+
+                                </div>
+
+                                <!-- Price Section - initially hidden -->
+                                <div class="price-toggle" style="display: none;" id="priceSection4">
+                                    <h5 class="py-3">
+                                        <i class="far fa-money-bill-alt"></i>
+                                        Beginner 2999 Birr
+                                    </h5>
+                                    <p>Duration 1 month (8 sessions, 2 hours each)</p>
+
+                                    <h5 class="py-3">
+                                        <i class="far fa-money-bill-alt"></i>
+                                        Intermediate 4999 Birr
+                                    </h5>
+                                    <p>Duration 1 month (8 sessions, 2 hours each)</p>
+
+                                    <h5 class="py-3">
+                                        <i class="far fa-money-bill-alt"></i>
+                                        Advanced 6999 Birr
+                                    </h5>
+                                    <p>Duration 1.5 months (10 sessions, 2 hours each)</p>
+
+                                    <p></p>
+                                </div>
+
+                                <!-- Button to toggle price visibility -->
+                                <div class="my-3">
+                                    <a class="btn" href="javascript:void(0);"
+                                        onclick="togglePrices('priceSection4')">View Price</a>
+                                </div>
+                            </div>
                         </div>
-                        
-                    <!-- Button to toggle price visibility -->
-                    <div class="my-3">
-                        <a class="btn" href="javascript:void(0);" onclick="togglePrices('priceSection10')">View Price</a>
+
+
+                        <div class="col-lg-4">
+                            <div class="card bg-transparent px-4" style="min-height: 450px;">
+                                <h4 class="py-2">Videography/Photography</h4>
+                                <p class="py-3">Topics Cover</p>
+                                <div class="block d-flex align-items-center">
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p>Photography Basics (Lighting, Framing, Camera Settings)</p>
+                                </div>
+                                <div class="block d-flex align-items-center">
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p>Video Editing in Adobe Premiere Pro/Final Cut Pro</p>
+                                </div>
+                                <div class="block d-flex align-items-center">
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p>Motion Graphics and Animation </p>
+                                </div>
+                                <div class="block d-flex align-items-center">
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p>Color Correction and Grading</p>
+                                </div>
+                                <div class="block d-flex align-items-center">
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p>Editing for Social Media</p>
+                                </div>
+
+                                <!-- Price Section - initially hidden -->
+                                <div class="price-toggle" style="display: none;" id="priceSection2">
+                                    <h5 class="py-3">
+                                        <i class="far fa-money-bill-alt"></i>
+                                        Beginner 4999 Birr
+                                    </h5>
+                                    <p>Duration 1 month (8 sessions, 2 hours each))</p>
+
+                                    <h5 class="py-3">
+                                        <i class="far fa-money-bill-alt"></i>
+                                        Intermediate 5999 Birr
+                                    </h5>
+                                    <p>Duration 1 month (8 sessions, 2 hours each)</p>
+
+                                    <h5 class="py-3">
+                                        <i class="far fa-money-bill-alt"></i>
+                                        Advanced 7999 Birr
+                                    </h5>
+                                    <p>Duration 1.5 months (10 sessions, 2 hours each)</p>
+                                </div>
+                                <!-- Button to toggle price visibility -->
+                                <div class="my-3">
+                                    <a class="btn" href="javascript:void(0);"
+                                        onclick="togglePrices('priceSection2')">View Price</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div> <!-- end of row -->
+
+                    <div class="row gy-4" data-aos="zoom-in">
+
+                        <div class="col-lg-4">
+                            <div class="card bg-transparent px-4" style="min-height: 520px;">
+                                <h4 class="py-2">Statistical Package for the Social Sciences</h4>
+                                <p class="py-3">Topics Cover</p>
+                                <div class="block d-flex align-items-center">
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p>Introduction to SPSS Interface</p>
+                                </div>
+                                <div class="block d-flex align-items-center">
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p>Data Entry and Management</p>
+                                </div>
+                                <div class="block d-flex align-items-center">
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p>Descriptive Statistics</p>
+                                </div>
+                                <div class="block d-flex align-items-center">
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p>Data Visualization and Graphs</p>
+                                </div>
+                                <div class="block d-flex align-items-center">
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p>Inferential Statistics (T-tests, ANOVA, Regression Analysis)</p>
+                                </div>
+                                <div class="block d-flex align-items-center">
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p>Advanced Statistical Techniques (Factor Analysis, Non-parametric Tests)</p>
+                                </div>
+                                <!-- Price Section - initially hidden -->
+                                <div class="price-toggle" style="display: none;" id="priceSection5">
+                                    <h5 class="py-3">
+
+                                        <i class="far fa-money-bill-alt"></i>
+                                        Beginner 4499 Birr
+                                    </h5>
+                                    <p>Duration 1 month (8 sessions, 2 hours each))</p>
+
+                                    <h5 class="py-3">
+                                        <i class="far fa-money-bill-alt"></i>
+                                        Intermediate 5999 Birr
+                                    </h5>
+                                    <p>Duration 1 month (8 sessions, 2 hours each)</p>
+
+                                    <h5 class="py-3">
+                                        <i class="far fa-money-bill-alt"></i>
+                                        Advanced 6999 Birr
+                                    </h5>
+                                    <p>Duration 1.5 months (10 sessions, 2 hours each)</p>
+                                </div>
+                                <!-- Button to toggle price visibility -->
+                                <div class="my-3">
+                                    <a class="btn" href="javascript:void(0);"
+                                        onclick="togglePrices('priceSection5')">View Price</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="card bg-transparent px-4" style="min-height: 520px;">
+                                <h4 class="py-2">Robotics and Drone Technology Training Package</h4>
+                                <p class="py-3">Topics Cover</p>
+                                <div class="block d-flex align-items-center">
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p>Introduction to Robotics</p>
+                                </div>
+                                <div class="block d-flex align-items-center">
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p>Building Simple Robots</p>
+                                </div>
+                                <div class="block d-flex align-items-center">
+
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p> Drone Flying Techniques</p>
+                                </div>
+                                <div class="block d-flex align-items-center">
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p>Drone Maintenance and Repair</p>
+                                </div>
+                                <div class="block d-flex align-items-center">
+                                    <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                                    <p>Robotics Prototyping and Programming</p>
+                                </div>
+                                <!-- Price Section - initially hidden -->
+                                <div class="price-toggle" style="display: none;" id="priceSection9">
+                                    <h5 class="py-3">
+
+                                        <i class="far fa-money-bill-alt"></i>
+                                        Beginner 8000 Birr
+                                    </h5>
+                                    <p>Duration 2 month (16 sessions, 2 hours each)</p>
+
+                                    <h5 class="py-3">
+                                        <i class="far fa-money-bill-alt"></i>
+                                        Intermediate 10,000 Birr
+                                    </h5>
+                                    <p>Duration 2 month (16 sessions, 2 hours each)</p>
+
+                                    <h5 class="py-3">
+                                        <i class="far fa-money-bill-alt"></i>
+                                        Advanced 12,500 Birr
+                                    </h5>
+                                    <p>Duration 3 months (24 sessions, 2 hours each)</p>
+                                </div>
+                                <!-- Button to toggle price visibility -->
+                                <div class="my-3">
+                                    <a class="btn" href="javascript:void(0);"
+                                        onclick="togglePrices('priceSection9')">View Price</a>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
-                    </div>  
-                </div>
-
-                   <div class="col-lg-4">
-                    <div class="card bg-transparent px-4" style="min-height: 470px;">
-                        <h4 class="py-2">Computer Maintenance Training Package</h4>
-                        <p class="py-3">Topics Cover</p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Hardware Basics (PC Assembly, Repair)</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Software Installation and Troubleshooting</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p> Virus Removal and Data Recovery</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Advanced Troubleshooting and System Optimization</p>
-                        </div>
-                          <!-- Price Section - initially hidden -->
-                          <div class="price-toggle" style="display: none;" id="priceSection6">
-                            <h5 class="py-3">
-                                
-                                <i class="far fa-money-bill-alt"></i>
-                                 Beginner 3000 Birr/Month</h5>
-                                  <p>Duration 1 month (8 sessions, 2 hours each))</p>
-                            
-                            <h5 class="py-3">
-                                <i class="far fa-money-bill-alt"></i>
-                                Intermediate 4000 Birr/Month</h5>
-                                     <p>Duration 1 month (8 sessions, 2 hours each)</p>
-    
-                            <h5 class="py-3">
-                                <i class="far fa-money-bill-alt"></i>
-                                Advanced 5000 Birr/Month</h5>
-                            <p>Duration 1.5 months (10 sessions, 2 hours each)</p>
-                        </div>
-                    <!-- Button to toggle price visibility -->
-                    <div class="my-3">
-                        <a class="btn" href="javascript:void(0);" onclick="togglePrices('priceSection6')">View Price</a>
-                        <br>
-                    </div>
-                    </div>  
-                </div>
-
-
-            </div> <!-- end of row -->
-         
-            
-            <div class="row gy-4" data-aos="zoom-in">
-                <div class="col-lg-4">
-                    <div class="card bg-transparent px-4" style="min-height: 450px;">
-                        <h4 class="py-2">Networking Training Package</h4>
-                        <p class="py-3">Topics Cover</p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Network Setup (LAN, Wi-Fi)</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Router and Modem Configuration</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Network Security Basics</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Advanced Network Troubleshooting</p>
-                           
-                        </div>
-                        
-                         <!-- Price Section - initially hidden -->
-                         <div class="price-toggle" style="display: none;" id="priceSection7">
-                            <h5 class="py-3">
-                                <i class="far fa-money-bill-alt"></i>
-                                 Beginner 3000 Birr/Month</h5>
-                                 <p>Duration 1 month (8 sessions, 2 hours each)</p>
-                            
-                            <h5 class="py-3">
-                                <i class="far fa-money-bill-alt"></i>
-                                Intermediate 4500 Birr/Month</h5>
-                                     <p>Duration 1.5 month (12 sessions, 2 hours each)</p>
-    
-                            <h5 class="py-3">
-                                <i class="far fa-money-bill-alt"></i>
-                                Advanced 7000 Birr/Month</h5>
-                            <p>Duration 2.5 months (16 sessions, 2 hours each)</p>
-                            
-                            <p></p>
-                        </div>
-                        
-                    <!-- Button to toggle price visibility -->
-                    <div class="my-3">
-                        <a class="btn" href="javascript:void(0);" onclick="togglePrices('priceSection7')">View Price</a>
-                    </div>
-                    </div>  
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="card bg-transparent px-4" style="min-height: 450px;">
-                        <h4 class="py-2">Microsoft Office Training</h4>
-                        <p class="py-3">Topics Cover</p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Word (Document Formatting, Styles)</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Excel (Data Entry, Formulas, Charts)</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>PowerPoint (Presentation Design)</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Advanced Excel (Pivot Tables, Macros)</p>
-                           
-                        </div>
-                        
-                         <!-- Price Section - initially hidden -->
-                         <div class="price-toggle" style="display: none;" id="priceSection4">
-                            <h5 class="py-3">
-                                <i class="far fa-money-bill-alt"></i>
-                                 Beginner 3000 Birr/Month</h5>
-                                 <p>Duration 1 month (8 sessions, 2 hours each)</p>
-                            
-                            <h5 class="py-3">
-                                <i class="far fa-money-bill-alt"></i>
-                                Intermediate 4000 Birr/Month</h5>
-                                     <p>Duration 1 month (8 sessions, 2 hours each)</p>
-    
-                            <h5 class="py-3">
-                                <i class="far fa-money-bill-alt"></i>
-                                Advanced 5000 Birr/Month</h5>
-                            <p>Duration 1.5 months (10 sessions, 2 hours each)</p>
-                            
-                            <p></p>
-                        </div>
-                        
-                    <!-- Button to toggle price visibility -->
-                    <div class="my-3">
-                        <a class="btn" href="javascript:void(0);" onclick="togglePrices('priceSection4')">View Price</a>
-                    </div>
-                    </div>  
-                </div>
-
-                
-                    <div class="col-lg-4">
-                    <div class="card bg-transparent px-4" style="min-height: 450px;">
-                        <h4 class="py-2">Video Editing & Photography</h4>
-                        <p class="py-3">Topics Cover</p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Photography Basics (Lighting, Framing, Camera Settings)</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Video Editing in Adobe Premiere Pro/Final Cut Pro</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Motion Graphics and Animation (After Effects)</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Color Correction and Grading</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Editing for Social Media</p>
-                        </div>
-                        
-                          <!-- Price Section - initially hidden -->
-                          <div class="price-toggle" style="display: none;" id="priceSection2">
-                            <h5 class="py-3">
-                                <i class="far fa-money-bill-alt"></i>
-                                 Beginner 3000 Birr/Month</h5>
-                                  <p>Duration 1 month (8 sessions, 2 hours each))</p>
-                            
-                            <h5 class="py-3">
-                                <i class="far fa-money-bill-alt"></i>
-                                Intermediate 6000 Birr/Month</h5>
-                                     <p>Duration 1 month (8 sessions, 2 hours each)</p>
-    
-                            <h5 class="py-3">
-                                <i class="far fa-money-bill-alt"></i>
-                                Advanced 7500 Birr/Month</h5>
-                            <p>Duration 1.5 months (10 sessions, 2 hours each)</p>
-                        </div>
-                    <!-- Button to toggle price visibility -->
-                    <div class="my-3">
-                        <a class="btn" href="javascript:void(0);" onclick="togglePrices('priceSection2')">View Price</a>
-                    </div>
-                    </div>  
-                </div>
-
-
-            </div> <!-- end of row -->
-
-            <div class="row gy-4" data-aos="zoom-in">
-               
-                <div class="col-lg-4">
-                    <div class="card bg-transparent px-4" style="min-height: 520px;">
-                        <h4 class="py-2">Statistical Package for the Social Sciences</h4>
-                        <p class="py-3">Topics Cover</p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Introduction to SPSS Interface</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Data Entry and Management</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Descriptive Statistics</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Data Visualization and Graphs</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Inferential Statistics (T-tests, ANOVA, Regression Analysis)</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Advanced Statistical Techniques (Factor Analysis, Non-parametric Tests)</p>
-                        </div>
-                          <!-- Price Section - initially hidden -->
-                          <div class="price-toggle" style="display: none;" id="priceSection5">
-                            <h5 class="py-3">
-                                
-                                <i class="far fa-money-bill-alt"></i>
-                                 Beginner 4500 Birr/Month</h5>
-                                  <p>Duration 1 month (8 sessions, 2 hours each))</p>
-                            
-                            <h5 class="py-3">
-                                <i class="far fa-money-bill-alt"></i>
-                                Intermediate 6000 Birr/Month</h5>
-                                     <p>Duration 1 month (8 sessions, 2 hours each)</p>
-    
-                            <h5 class="py-3">
-                                <i class="far fa-money-bill-alt"></i>
-                                Advanced 7500 Birr/Month</h5>
-                            <p>Duration 1.5 months (10 sessions, 2 hours each)</p>
-                        </div>
-                    <!-- Button to toggle price visibility -->
-                    <div class="my-3">
-                        <a class="btn" href="javascript:void(0);" onclick="togglePrices('priceSection5')">View Price</a>
-                    </div>
-                    </div>  
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="card bg-transparent px-4" style="min-height: 520px;">
-                        <h4 class="py-2">Robotics and Drone Technology Training Package</h4>
-                        <p class="py-3">Topics Cover</p>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Introduction to Robotics</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Building Simple Robots</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p> Drone Flying Techniques</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Drone Maintenance and Repair</p>
-                        </div>
-                        <div class="block d-flex align-items-center">
-                            <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
-                            <p>Robotics Prototyping and Programming</p>
-                        </div>        
-                          <!-- Price Section - initially hidden -->
-                          <div class="price-toggle" style="display: none;" id="priceSection9">
-                            <h5 class="py-3">
-                                
-                                <i class="far fa-money-bill-alt"></i>
-                                 Beginner 8000 Birr/Month</h5>
-                                  <p>Duration 2 month (16 sessions, 2 hours each))</p>
-                            
-                            <h5 class="py-3">
-                                <i class="far fa-money-bill-alt"></i>
-                                Intermediate 10,000 Birr/Month</h5>
-                                     <p>Duration 2 month (16 sessions, 2 hours each)</p>
-    
-                            <h5 class="py-3">
-                                <i class="far fa-money-bill-alt"></i>
-                                Advanced 12,500 Birr/Month</h5>
-                            <p>Duration 3 months (24 sessions, 2 hours each)</p>
-                        </div>
-                    <!-- Button to toggle price visibility -->
-                    <div class="my-3">
-                        <a class="btn" href="javascript:void(0);" onclick="togglePrices('priceSection9')">View Price</a>
-                    </div>
-                    </div>  
-                </div>
-
-
-</div>
-        </div> <!-- end of container -->
-        </div>
+                </div> <!-- end of container -->
+            </div>
     </section> <!-- end of plans -->
 
-   
 
-   
-   
+    <!-- Work Section 
+    <section class="work d-flex align-items-center py-5" >
+        <div class="container-fluid text-light">
+            <div class="row">
+                <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right">
+                    <img class="img-fluid" src="./assets/images/work.jpg" alt="work">        
+                </div>
+                <div class="col-lg-5 d-flex align-items-center px-4 py-3" data-aos="">
+                    <div class="row">
+                        <div class="text-center text-lg-start py-4 pt-lg-0">
+                            <p>OUR WORK</p>
+                            <h2 class="py-2">Explore unlimited possibilities</h2>
+                            <p class="para-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos dicta mollitia totam explicabo obcaecati quia laudantium repudiandae.</p>
+                        </div>
+                        <div class="container" data-aos="fade-up">
+                            <div class="row g-5">
+                                <div class="col-6 text-start" >
+                                    <i class="fas fa-briefcase fa-2x text-start"></i>
+                                    <h2 class="purecounter" data-purecounter-start="0" data-purecounter-end="1258" data-purecounter-duration="3">1</h2>
+                                    <p>PROJECTS COMPLETED</p>
+                                </div>
+                                <div class="col-6" >
+                                    <i class="fas fa-award fa-2x"></i>
+                                    <h2 class="purecounter" data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="3">1</h2>
+                                    <p>AWARDS</p>
+                                </div>
+                                <div class="col-6">
+                                    <i class="fas fa-users fa-2x"></i>
+                                    <h2 class="purecounter" data-purecounter-start="0" data-purecounter-end="1255" data-purecounter-duration="3">1</h2>
+                                    <p>CUSTOMER ACTIVE</p>
+                                </div>
+                                <div class="col-6">
+                                    <i class="fas fa-clock fa-2x"></i>
+                                    <h2 class="purecounter" data-purecounter-start="0" data-purecounter-end="1157" data-purecounter-duration="3">1</h2>
+                                    <p>GOOD REVIEWS</p>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div> 
+            </div> 
+        </div>
+    </section>
+   Work &&&&&&&&&&-->
 
+
+
+
+
+    <!--
+    <section class="newsletter text-light py-5">
+        <div class="container">
+            <div class="row" >
+                <div class="col-lg-6 text-center text-lg-start" data-aos="fade-right">
+                    <h4 class="py-1">Subscribe to our Newsletter</h4>
+                    <p class="para-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor deleniti nobis amet accusamus debitis facilis quibusdam officia laborum nesciunt. Nihil.</p>
+                </div>
+                <div class="col-lg-6 d-flex align-items-center" data-aos="fade-down">
+                    <div class="input-group my-3">
+                        <input type="text" class="form-control p-2" placeholder="Enter your email address" aria-label="Recipient's email">
+                        <button class="btn-secondary text-light" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> &&& -->
 
 
     <!-- Contact -->
-  
+
     <section class="contact d-flex align-items-center " id="contact">
         <div class="container-fluid text-light">
-            <div class="row gy-4"  data-aos="zoom-in">
-                <div class="col-lg-6 d-flex justify-content-center justify-content-lg-end align-items-center  px-4" data-aos="fade-right">
+            <div class="row gy-4" data-aos="zoom-in">
+                <div class="col-lg-6 d-flex justify-content-center justify-content-lg-end align-items-center  px-4"
+                    data-aos="fade-right">
                     <div style="width:100%">
                         <div class="text-center text-lg-start py-4 pt-lg-0">
                             <p>CONTACT</p>
@@ -1212,30 +1349,34 @@
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group py-2">
-                                        <input required type="text" class="form-control form-control-input" id="name" placeholder="Enter name" >
-                                    </div>                                
+                                        <input required type="text" class="form-control form-control-input" id="name"
+                                            placeholder="Enter name">
+                                    </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group py-2">
-                                        <input type="text" class="form-control form-control-input" id="phone" placeholder="Enter phone number" required>
-                                    </div>                                 
+                                        <input type="text" class="form-control form-control-input" id="phone"
+                                            placeholder="Enter phone number" required>
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-group py-1">
-                                <input type="email" class="form-control form-control-input" id="email" placeholder="Enter email" required>
-                            </div>  
+                                <input type="email" class="form-control form-control-input" id="email"
+                                    placeholder="Enter email" required>
+                            </div>
                             <div class="form-group py-2">
-                                <textarea class="form-control form-control-input" id="message" rows="6" placeholder="Message" required></textarea>
-                            </div>                            
+                                <textarea class="form-control form-control-input" id="message" rows="6"
+                                    placeholder="Message" required></textarea>
+                            </div>
                         </div>
                         <div class="my-3">
                             <button class="btn form-control-submit-button" onclick="sendEmail()">Submit</button>
                         </div>
-                        
+
                     </div> <!-- end of div -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6 d-flex align-items-center" data-aos="fade-down">
-                    <img class="img-fluid d-none d-lg-block" src="./assets/images/emarecontact.jpg" alt="contact">        
+                    <img class="img-fluid d-none d-lg-block" src="./assets/images/emarecontact.jpg" alt="contact">
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -1253,33 +1394,43 @@
                         <p>Debre Berhan</p>
                     </div>
                 </div>
-                <div class="col-lg-3 d-flex align-items-center" >
+                <div class="col-lg-3 d-flex align-items-center">
                     <div class="p-2"><i class="fas fa-mobile-alt fa-3x"></i></div>
                     <div class="ms-2">
                         <h6>CALL FOR QUERY</h6>
-                        <p>+251 926716804</p>
                         <p>+251 914362720</p>
+                        <p>+251 905050698</p>
                     </div>
                 </div>
-                <div class="col-lg-3 d-flex align-items-center" >
+                <div class="col-lg-3 d-flex align-items-center">
                     <div class="p-2"><i class="far fa-envelope fa-3x"></i></div>
                     <div class="ms-2">
                         <h6>SEND US MESSAGE</h6>
-                        <p>
-                            info@emareicthub.com</p>
+                        <p>info@emareicthub.com</p>
+                        <p>emareicthub@gmail.com</p>
                     </div>
                 </div>
-                <div class="col-lg-3 d-flex align-items-center" >
+                <div class="col-lg-3 d-flex align-items-center">
                     <div class="p-2"><i class="far fa-clock fa-3x"></i></div>
                     <div class="ms-2">
                         <h6>OPENING HOURS</h6>
-                        <p>09:00 AM - 18:00 PM</p>
+                        <p>08:30 AM - 18:00 PM</p>
                     </div>
                 </div>
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </section> <!-- end of location -->
 
+    <!-- Google Maps -->
+    <section id="maps" class="maps">
+            
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3933.1393931698344!2d39.52153537372087!3d9.669128978643275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1649bde6a8826f65%3A0xea2ad371a36ad02a!2sEmare%20ICT%20Hub!5e0!3m2!1sen!2set!4v1747051293898!5m2!1sen!2set"
+        style="width: 100%; height: 250px; border: 0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+</section>
 
     <!-- Footer -->
     <section class="footer text-light">
@@ -1287,24 +1438,28 @@
             <div class="row" data-aos="fade-right">
                 <div class="col-lg-3 py-4 py-md-5">
                     <div class="d-flex align-items-center">
-                        <h4 class="">Emare Ict Hub</h4>
+                        <h4 class="">Emare ICT Hub</h4>
                     </div>
                     <p class="py-3 para-light">A Center for Digital Innovation and Technology Development</p>
                     <div class="d-flex">
                         <div class="me-3">
-                            <a href="#your-link">
+                            <a href="https://web.facebook.com/profile.php?id=61575108773808">
                                 <i class="fab fa-facebook-f fa-2x py-2"></i>
                             </a>
                         </div>
                         <div class="me-3">
                             <a href="#your-link">
-                                <i class="fab fa-x-twitter fa-2x py-2"></i>
-                                
+                                <i class="fab fa-twitter fa-2x py-2"></i>
                             </a>
                         </div>
                         <div class="me-3">
-                            <a href="#your-link">
+                            <a href="https://www.instagram.com/emare_ict_hub?igsh=emllYWtybmlucGh0">
                                 <i class="fab fa-instagram fa-2x py-2"></i>
+                            </a>
+                        </div>
+                        <div class="me-3">
+                            <a href="https://www.linkedin.com/company/emareicthub" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-linkedin fa-2x py-2"></i>
                             </a>
                         </div>
                     </div>
@@ -1315,75 +1470,84 @@
                         <h4 class="py-2">Quick Links</h4>
                         <div class="d-flex align-items-center py-2">
                             <i class="fas fa-caret-right"></i>
-                            <a href="#about"><p class="ms-3">About</p></a>
+                            <a href="#about">
+                                <p class="ms-3">About</p>
+                            </a>
                         </div>
                         <div class="d-flex align-items-center py-2">
                             <i class="fas fa-caret-right"></i>
-                            <a href="#services"><p class="ms-3">Services</p></a>
+                            <a href="#services">
+                                <p class="ms-3">Services</p>
+                            </a>
                         </div>
                         <div class="d-flex align-items-center py-2">
                             <i class="fas fa-caret-right"></i>
-                            <a href="#plans"><p class="ms-3">Training Package</p></a>
+                            <a href="#plans">
+                                <p class="ms-3">Training Package</p>
+                            </a>
                         </div>
                         <div class="d-flex align-items-center py-2">
                             <i class="fas fa-caret-right"></i>
-                            <a href="#contact"><p class="ms-3">Contact</p></a>
+                            <a href="#contact">
+                                <p class="ms-3">Contact</p>
+                            </a>
                         </div>
                     </div>
                 </div> <!-- end of col -->
 
-              <!--  <div class="col-lg-3 py-4 py-md-5">
+                <div class="col-lg-3 py-4 py-md-5">
                     <div>
                         <h4 class="py-2">Useful Links</h4>
                         <div class="d-flex align-items-center py-2">
                             <i class="fas fa-caret-right"></i>
-                            <a href="privacy.html"><p class="ms-3">Privacy</p></a>
+                            <a href="under_constract.html"><p class="ms-3">Privacy</p></a>
                             
                         </div>
                         <div class="d-flex align-items-center py-2">
                             <i class="fas fa-caret-right"></i>
-                            <a href="terms.html"><p class="ms-3">Terms</p></a>
+                            <a href="under_constract.html"><p class="ms-3">Terms</p></a>
                         </div>
                         <div class="d-flex align-items-center py-2">
                             <i class="fas fa-caret-right"></i>
-                            <a href="#your-link"><p class="ms-3">Disclaimer</p></a>
+                            <a href="under_constract.html"><p class="ms-3">Disclaimer</p></a>
                         </div>
                         <div class="d-flex align-items-center py-2">
                             <i class="fas fa-caret-right"></i>
-                            <a href="#your-link"><p class="ms-3">FAQ</p></a>
+                            <a href="under_constract.html"><p class="ms-3">FAQ</p></a>
                         </div>
                     </div>
-                </div>--> <!-- end of col -->
+                </div>  
 
-                 <!-- end of col -->
+                <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </section> <!-- end of footer -->
 
 
     <!-- Bottom -->
-    <div class="bottom py-2 text-light" >
+    <div class="bottom py-2 text-light">
         <div class="container d-flex justify-content-between">
             <div>
-                <p>Copyright © EmareICTHub</p><br>
+                <p>Copyright © EmareICTHub 2025</p><br>
             </div>
-            
+
         </div> <!-- end of container -->
     </div> <!-- end of bottom -->
- 
-    
+
+
     <!-- Back To Top Button -->
     <button onclick="topFunction()" id="myBtn">
         <img src="assets/images/up-arrow.png" alt="alternative">
     </button>
     <!-- end of back to top button -->
 
-    
+
     <!-- Scripts -->
     <script src="./js/bootstrap.min.js"></script><!-- Bootstrap framework -->
     <script src="./js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
     <script src="./js/swiper.min.js"></script><!-- Swiper for image and text sliders -->
     <script src="./js/aos.js"></script><!-- AOS on Animation Scroll -->
-    <script src="./js/script.js"></script>  <!-- Custom scripts -->
+    <script src="./js/script.js"></script> <!-- Custom scripts -->
 </body>
+
 </html>
